@@ -1,4 +1,4 @@
-# Copyright (c) 2023-2024 Arista Networks, Inc.
+# Copyright (c) 2023-2025 Arista Networks, Inc.
 # Use of this source code is governed by the Apache License 2.0
 # that can be found in the LICENSE file.
 """A script to generate svg files from anta command.
@@ -24,6 +24,7 @@ from unittest.mock import patch
 
 from rich.console import Console
 from rich.logging import RichHandler
+from rich.progress import Progress
 
 from anta.cli.console import console
 from anta.cli.nrfu.utils import anta_progress_bar
@@ -37,7 +38,7 @@ root.addHandler(r)
 OUTPUT_DIR = pathlib.Path(__file__).parent.parent / "imgs"
 
 
-def custom_progress_bar() -> None:
+def custom_progress_bar() -> Progress:
     """Set the console of progress_bar to main anta console.
 
     Caveat: this capture all steps of the progress bar..
@@ -93,7 +94,7 @@ if __name__ == "__main__":
         # Redirect stdout of the program towards another StringIO to capture help
         # that is not part or anta rich console
         # redirect potential progress bar output to console by patching
-        with patch("anta.cli.nrfu.anta_progress_bar", custom_progress_bar), suppress(SystemExit):
+        with patch("anta.cli.nrfu.utils.anta_progress_bar", custom_progress_bar), suppress(SystemExit):
             function()
 
     if "--help" in args:
