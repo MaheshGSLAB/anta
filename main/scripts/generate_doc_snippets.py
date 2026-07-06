@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Copyright (c) 2024-2025 Arista Networks, Inc.
+# Copyright (c) 2024-2026 Arista Networks, Inc.
 # Use of this source code is governed by the Apache License 2.0
 # that can be found in the LICENSE file.
 """Generates SVG for documentation purposes."""
@@ -27,6 +27,15 @@ COMMANDS = [
     "anta get from-cvp --help",
     "anta get from-ansible --help",
     "anta get commands --help",
+    "anta check --help",
+    "anta check catalog --help",
+    "anta exec --help",
+    "anta exec clear-counters --help",
+    "anta exec snapshot --help",
+    "anta exec collect-tech-support --help",
+    "anta debug --help",
+    "anta debug run-cmd --help",
+    "anta debug run-template --help",
 ]
 
 for command in COMMANDS:
