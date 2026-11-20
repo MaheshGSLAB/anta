@@ -12,7 +12,8 @@
         <meta name="author" content="Khelil Sator">
       
       
-        <link rel="canonical" href="https://anta.arista.com/main/contribution/">
+        <link rel="canonical" href="https://anta.arista.com/stable/contribution/">
+      
       
       
         <link rel="prev" href="../troubleshooting/">
@@ -25,7 +26,7 @@
       
       
       <link rel="icon" href="../imgs/favicon.ico">
-      <meta name="generator" content="zensical-0.0.46">
+      <meta name="generator" content="zensical-0.1.1">
     
     
       
@@ -36,12 +37,12 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.19d3147f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.ebb7f775.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.b60ce83d.min.css">
       
       
 
@@ -83,14 +84,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#create-a-development-environment" class="md-skip">
-          Skip to content
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -103,14 +101,14 @@
               
   <span id="current-version">
     
-      This is the documentation from the 'main' branch which is not a stable release.
+      You're not viewing the latest version.
     
     <a href="../../stable/contribution/"><strong>Click here to go to latest stable release.</strong></a>
   </span>
   
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL(".."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("..",location),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -125,12 +123,13 @@
     <a href="./.." title="Arista Network Test Automation - ANTA" class="md-header__button md-logo" aria-label="Arista Network Test Automation - ANTA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+    <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+      <span class="md-visually-hidden">Navigation</span>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -182,9 +181,10 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+        <label class="md-header__button md-icon" for="__search">
           
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+          <span class="md-visually-hidden">Search</span>
         </label>
         <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
   <button type="button" class="md-search__button">
@@ -198,7 +198,7 @@
         <a href="https://github.com/aristanetworks/anta" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
   </div>
   <div class="md-source__repository">
     ANTA on Github
@@ -236,7 +236,7 @@
     <a href="./.." title="Arista Network Test Automation - ANTA" class="md-nav__button md-logo" aria-label="Arista Network Test Automation - ANTA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
 
     </a>
     Arista Network Test Automation - ANTA
@@ -246,7 +246,7 @@
       <a href="https://github.com/aristanetworks/anta" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
   </div>
   <div class="md-source__repository">
     ANTA on Github
@@ -417,18 +417,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   ANTA CLI
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -452,10 +453,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -479,10 +480,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -506,10 +507,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -533,10 +534,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -560,10 +561,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -587,10 +588,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -614,10 +615,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -641,10 +642,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -668,10 +669,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -695,10 +696,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -714,9 +716,7 @@
     
       
         
-      
-        
-      
+          
         
       
         
@@ -732,48 +732,58 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../reports/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
     
   
-  Advanced Usages
+  Reports
 
     
   </span>
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Advanced Usages
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+            </a>
             
               
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Reports
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
                 
+              
+                
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../advanced_usages/caching/" class="md-nav__link">
+      <a href="../reports/anta/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Caching in ANTA
+  ANTA Test Reports
 
     
   </span>
@@ -784,91 +794,11 @@
     </li>
   
 
-              
-            
-              
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../advanced_usages/custom-tests/" class="md-nav__link">
+              
+            </ul>
+          </nav>
         
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Developing ANTA tests
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../advanced_usages/as-python-lib/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  ANTA as a Python Library
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../advanced_usages/env-vars/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Environment Variables
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -971,18 +901,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1006,10 +937,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1033,10 +964,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1060,10 +991,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1087,10 +1018,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1114,10 +1045,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1141,10 +1072,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1168,10 +1099,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1195,10 +1126,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1222,10 +1153,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1249,10 +1180,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1276,10 +1207,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1303,10 +1234,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1330,10 +1261,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1357,10 +1288,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1384,10 +1315,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1411,10 +1342,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1438,10 +1369,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1465,10 +1396,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1492,10 +1423,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1519,10 +1450,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1566,18 +1497,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_21">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7_21">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Routing
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1601,10 +1533,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1628,10 +1560,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1655,10 +1587,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1682,18 +1614,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1717,10 +1650,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1744,10 +1677,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1771,10 +1704,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1798,10 +1731,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1825,10 +1758,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1852,10 +1785,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1879,10 +1812,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1906,10 +1839,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1933,10 +1866,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1950,18 +1884,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -1989,6 +1911,450 @@
   <span class="md-ellipsis">
     
   
+  Security Advisory
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Security Advisory
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-advisory/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Usage
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-advisory/reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Report formats and results
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tests
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Tests
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-advisory/tests-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-advisory/tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tests
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-advisory/lab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Test in the lab
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Advanced Usages
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Advanced Usages
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_usages/caching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Caching in ANTA
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_usages/custom-tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Developing ANTA tests
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_usages/as-python-lib/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ANTA as a Python Library
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_usages/env-vars/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Environment Variables
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
   API Documentation
 
     
@@ -1999,18 +2365,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   API Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2034,10 +2401,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2061,10 +2428,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2088,10 +2455,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2115,10 +2482,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2142,10 +2509,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2167,10 +2534,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_6" >
         
           
-          <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_6" id="__nav_10_6_label" tabindex="0">
             
   
   
@@ -2187,18 +2554,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_6">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2222,10 +2590,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2249,10 +2617,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2276,18 +2644,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2311,10 +2680,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2338,17 +2707,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_8" >
         
           
-          <label class="md-nav__link" for="__nav_8_8" id="__nav_8_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_8" id="__nav_10_8_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-  Reporters
+  Reporter API
 
     
   </span>
@@ -2358,18 +2727,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_8">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-  Reporters
+  Reporter API
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2393,10 +2763,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2420,10 +2790,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2447,10 +2817,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2474,18 +2844,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2509,10 +2880,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2536,10 +2907,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2648,6 +3020,20 @@
           
             <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
 <li class="md-nav__item">
+    <a href="#locked-dependencies" class="md-nav__link">
+      <span class="md-ellipsis">
+        Locked dependencies
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
     <a href="#code-linting" class="md-nav__link">
       <span class="md-ellipsis">
         Code linting
@@ -2690,6 +3076,20 @@
     
       <nav class="md-nav" aria-label="Unit tests with Pytest">
         <ul class="md-nav__list">
+          
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
+    <a href="#how-to-run-unit-tests" class="md-nav__link">
+      <span class="md-ellipsis">
+        How to run unit tests
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
           
           
             <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
@@ -2766,6 +3166,34 @@
           
             <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
 <li class="md-nav__item">
+    <a href="#preserve-page-and-heading-links" class="md-nav__link">
+      <span class="md-ellipsis">
+        Preserve page and heading links
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
+    <a href="#link-to-python-api-objects" class="md-nav__link">
+      <span class="md-ellipsis">
+        Link to Python API objects
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
     <a href="#generated-cli-snippets" class="md-nav__link">
       <span class="md-ellipsis">
         Generated CLI snippets
@@ -2780,9 +3208,9 @@
           
             <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
 <li class="md-nav__item">
-    <a href="#build-class-diagram" class="md-nav__link">
+    <a href="#curated-class-diagram" class="md-nav__link">
       <span class="md-ellipsis">
-        Build class diagram
+        Curated class diagram
       </span>
     </a>
 
@@ -2910,6 +3338,20 @@
           
             <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
 <li class="md-nav__item">
+    <a href="#locked-dependencies" class="md-nav__link">
+      <span class="md-ellipsis">
+        Locked dependencies
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
     <a href="#code-linting" class="md-nav__link">
       <span class="md-ellipsis">
         Code linting
@@ -2952,6 +3394,20 @@
     
       <nav class="md-nav" aria-label="Unit tests with Pytest">
         <ul class="md-nav__list">
+          
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
+    <a href="#how-to-run-unit-tests" class="md-nav__link">
+      <span class="md-ellipsis">
+        How to run unit tests
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
           
           
             <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
@@ -3028,6 +3484,34 @@
           
             <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
 <li class="md-nav__item">
+    <a href="#preserve-page-and-heading-links" class="md-nav__link">
+      <span class="md-ellipsis">
+        Preserve page and heading links
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
+    <a href="#link-to-python-api-objects" class="md-nav__link">
+      <span class="md-ellipsis">
+        Link to Python API objects
+      </span>
+    </a>
+
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
+<li class="md-nav__item">
     <a href="#generated-cli-snippets" class="md-nav__link">
       <span class="md-ellipsis">
         Generated CLI snippets
@@ -3042,9 +3526,9 @@
           
             <!-- Courtesy of https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-1869812019 -->
 <li class="md-nav__item">
-    <a href="#build-class-diagram" class="md-nav__link">
+    <a href="#curated-class-diagram" class="md-nav__link">
       <span class="md-ellipsis">
-        Build class diagram
+        Curated class diagram
       </span>
     </a>
 
@@ -3106,13 +3590,15 @@
 
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
+
   
   
 
 
-  <h1 id="__skip">How to contribute to ANTA</h1>
+  <h1>Contributions</h1>
 
 <!--
   ~ Copyright (c) 2023-2026 Arista Networks, Inc.
@@ -3121,8 +3607,12 @@
   -->
 
 <p>Contribution model is based on a fork-model. Don&rsquo;t push to aristanetworks/anta directly. Always do a branch in your forked repository and create a PR.</p>
-<p>To help development, open your PR as soon as possible even in draft mode. It helps other to know on what you are working on and avoid duplicate PRs.</p>
+<p>To help development, open your PR as soon as possible even in draft mode. It helps others know what you are working on and avoid duplicate PRs.</p>
 <h3 id="create-a-development-environment">Create a development environment<a class="headerlink" href="#create-a-development-environment" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">pip dependency groups</p>
+<p>The <code>--group</code> option used in this guide requires pip 25.1 or newer.</p>
+</div>
 <p>Run the following commands to create an ANTA development environment:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Clone repository</span>
 $<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aristanetworks/anta.git
@@ -3131,7 +3621,7 @@ $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>anta
 <span class="c1"># Install ANTA in editable mode and its development tools</span>
 $<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="w"> </span>--group<span class="w"> </span>dev
 <span class="c1"># To also install the CLI</span>
-$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[cli]&quot;</span><span class="w"> </span>--group<span class="w"> </span>dev
+$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">".[cli]"</span><span class="w"> </span>--group<span class="w"> </span>dev
 </code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Verify editable installation</p>
@@ -3139,47 +3629,48 @@ $<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </sp
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>pip<span class="w"> </span>list<span class="w"> </span>-e
 Package<span class="w"> </span>Version<span class="w"> </span>Editable<span class="w"> </span>project<span class="w"> </span>location
 -------<span class="w"> </span>-------<span class="w"> </span>-------------------------
-anta<span class="w">    </span><span class="m">1</span>.8.0<span class="w">   </span>/mnt/lab/projects/anta
+anta<span class="w">    </span><span class="m">1</span>.11.0<span class="w">   </span>/mnt/lab/projects/anta
 </code></pre></div>
 </div>
-<p>Then, <a href="https://tox.wiki/"><code>tox</code></a> is configured with few environments to run CI locally:</p>
+<p>Then, <a href="https://tox.wiki/"><code>tox</code></a> is configured with a few environments to run CI locally:</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>tox<span class="w"> </span>list<span class="w"> </span>-d
 default<span class="w"> </span>environments:
 clean<span class="w">  </span>-&gt;<span class="w"> </span>Erase<span class="w"> </span>previous<span class="w"> </span>coverage<span class="w"> </span>reports
 lint<span class="w">   </span>-&gt;<span class="w"> </span>Check<span class="w"> </span>the<span class="w"> </span>code<span class="w"> </span>style
 <span class="nb">type</span><span class="w">   </span>-&gt;<span class="w"> </span>Check<span class="w"> </span>typing
-py310<span class="w">  </span>-&gt;<span class="w"> </span>Run<span class="w"> </span>pytest<span class="w"> </span>with<span class="w"> </span>py310
 py311<span class="w">  </span>-&gt;<span class="w"> </span>Run<span class="w"> </span>pytest<span class="w"> </span>with<span class="w"> </span>py311
 py312<span class="w">  </span>-&gt;<span class="w"> </span>Run<span class="w"> </span>pytest<span class="w"> </span>with<span class="w"> </span>py312
 py313<span class="w">  </span>-&gt;<span class="w"> </span>Run<span class="w"> </span>pytest<span class="w"> </span>with<span class="w"> </span>py313
 py314<span class="w">  </span>-&gt;<span class="w"> </span>Run<span class="w"> </span>pytest<span class="w"> </span>with<span class="w"> </span>py314
+py315<span class="w">  </span>-&gt;<span class="w"> </span>Run<span class="w"> </span>pytest<span class="w"> </span>with<span class="w"> </span>py315
 report<span class="w"> </span>-&gt;<span class="w"> </span>Generate<span class="w"> </span>coverage<span class="w"> </span>report
 </code></pre></div>
-<h4 id="code-linting">Code linting<a class="headerlink" href="#code-linting" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>tox<span class="w"> </span>-e<span class="w"> </span>lint
-<span class="o">[</span>...<span class="o">]</span>
-lint:<span class="w"> </span>commands<span class="o">[</span><span class="m">0</span><span class="o">]</span>&gt;<span class="w"> </span>ruff<span class="w"> </span>check<span class="w"> </span>.
-All<span class="w"> </span>checks<span class="w"> </span>passed!
-lint:<span class="w"> </span>commands<span class="o">[</span><span class="m">1</span><span class="o">]</span>&gt;<span class="w"> </span>ruff<span class="w"> </span>format<span class="w"> </span>.<span class="w"> </span>--check
-<span class="m">224</span><span class="w"> </span>files<span class="w"> </span>already<span class="w"> </span>formatted
-lint:<span class="w"> </span>commands<span class="o">[</span><span class="m">2</span><span class="o">]</span>&gt;<span class="w"> </span>pylint<span class="w"> </span>anta
-
---------------------------------------------------------------------
-Your<span class="w"> </span>code<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>rated<span class="w"> </span>at<span class="w"> </span><span class="m">10</span>.00/10<span class="w"> </span><span class="o">(</span>previous<span class="w"> </span>run:<span class="w"> </span><span class="m">10</span>.00/10,<span class="w"> </span>+0.00<span class="o">)</span>
-
-lint:<span class="w"> </span>commands<span class="o">[</span><span class="m">3</span><span class="o">]</span>&gt;<span class="w"> </span>pylint<span class="w"> </span>tests
-
---------------------------------------------------------------------
-Your<span class="w"> </span>code<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>rated<span class="w"> </span>at<span class="w"> </span><span class="m">10</span>.00/10<span class="w"> </span><span class="o">(</span>previous<span class="w"> </span>run:<span class="w"> </span><span class="m">10</span>.00/10,<span class="w"> </span>+0.00<span class="o">)</span>
-
-lint:<span class="w"> </span>commands<span class="o">[</span><span class="m">4</span><span class="o">]</span>&gt;<span class="w"> </span>pylint<span class="w"> </span>asynceapi
-
---------------------------------------------------------------------
-Your<span class="w"> </span>code<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>rated<span class="w"> </span>at<span class="w"> </span><span class="m">10</span>.00/10<span class="w"> </span><span class="o">(</span>previous<span class="w"> </span>run:<span class="w"> </span><span class="m">10</span>.00/10,<span class="w"> </span>+0.00<span class="o">)</span>
-
-<span class="w">  </span>lint:<span class="w"> </span>OK<span class="w"> </span><span class="o">(</span><span class="m">38</span>.75<span class="o">=</span>setup<span class="o">[</span><span class="m">12</span>.60<span class="o">]</span>+cmd<span class="o">[</span><span class="m">0</span>.98,0.08,9.51,13.49,2.09<span class="o">]</span><span class="w"> </span>seconds<span class="o">)</span>
-<span class="w">  </span>congratulations<span class="w"> </span>:<span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="m">38</span>.78<span class="w"> </span>seconds<span class="o">)</span>
+<h4 id="locked-dependencies">Locked dependencies<a class="headerlink" href="#locked-dependencies" title="Permanent link">&para;</a></h4>
+<p>The committed <code>uv.lock</code> records exact versions of the root project&rsquo;s runtime dependencies, CLI extra, and dependency groups so GitHub Dependabot can detect known vulnerabilities in the resolved dependencies. Renovate refreshes the lock weekly, including transitive dependencies, and updates it alongside dependency declaration changes. Lock maintenance bypasses Renovate&rsquo;s release-age status check because it has no individual release timestamp; uv enforces the seven-day cutoff during resolution.</p>
+<p>To reproduce the locked unit-test environment, install <a href="https://docs.astral.sh/uv/getting-started/installation/">uv</a> 0.9.25 or newer and run from the repository root:</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>sync<span class="w"> </span>--locked<span class="w"> </span>--python<span class="w"> </span><span class="m">3</span>.11<span class="w"> </span>--no-default-groups<span class="w"> </span>--group<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--extra<span class="w"> </span>cli
+<span class="nv">COLUMNS</span><span class="o">=</span><span class="m">165</span><span class="w"> </span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/units<span class="w"> </span>--no-cov
 </code></pre></div>
+<p>CI checks lock freshness and runs this environment in addition to the existing tox checks. Tox continues to resolve dependencies independently across the supported Python versions. Pre-commit continues to manage its own isolated hook environments.</p>
+<p>When changing project metadata or dependency declarations in <code>pyproject.toml</code>, regenerate and commit the lock together with the manifest:</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>lock
+uv<span class="w"> </span>lock<span class="w"> </span>--check
+</code></pre></div>
+<p>To deliberately upgrade a selected dependency or refresh the complete graph within the declared requirements:</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>lock<span class="w"> </span>--upgrade-package<span class="w"> </span>&lt;package-name&gt;
+uv<span class="w"> </span>lock<span class="w"> </span>--upgrade
+</code></pre></div>
+<p>Routine uv resolution excludes distributions uploaded to package registries within the last seven days for both direct and transitive dependencies, aligning with Renovate&rsquo;s release-age policy. The cutoff uses each wheel or source archive&rsquo;s upload timestamp, not the package version&rsquo;s release date. For an urgent security fix, maintainers can temporarily bypass uv&rsquo;s cooldown for the affected package:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[tool.uv.exclude-newer-package]</span>
+<span class="n">affected-package</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+</code></pre></div>
+<p>Record the advisory and reason in the PR, update the affected package, and remove the exception once the distributions required by the supported environments are at least seven days old, measured from their registry upload times. Any applicable Renovate approval or release-age restrictions must also be handled when expediting its PRs.</p>
+<p>A lock update selects versions for environments that consume it. Ordinary pip installations use ANTA&rsquo;s published dependency ranges. When addressing a relevant vulnerability, also assess whether those ranges must exclude affected versions; updating the lock alone does not change downstream requirements or existing installations.</p>
+<h4 id="code-linting">Code linting<a class="headerlink" href="#code-linting" title="Permanent link">&para;</a></h4>
+<p>Ruff checks lint rules and formatting:</p>
+<div class="highlight"><pre><span></span><code>tox<span class="w"> </span>-e<span class="w"> </span>lint
+</code></pre></div>
+<p>Run the separate typing environment below to check types with Pyright. Static analysis complements tests; exercise invalid inputs, import paths, iterator behavior, and resource cleanup in the relevant unit tests.</p>
 <h4 id="code-typing">Code Typing<a class="headerlink" href="#code-typing" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>tox<span class="w"> </span>-e<span class="w"> </span><span class="nb">type</span>
 
@@ -3197,12 +3688,46 @@ type:<span class="w"> </span>commands<span class="o">[</span><span class="m">2</
 <p>NOTE: Typing is configured quite strictly, do not hesitate to reach out if you have any questions, struggles, nightmares.</p>
 </blockquote>
 <h3 id="unit-tests-with-pytest">Unit tests with Pytest<a class="headerlink" href="#unit-tests-with-pytest" title="Permanent link">&para;</a></h3>
-<p>To keep high quality code, we require to provide a <strong>Pytest</strong> for every tests implemented in ANTA.</p>
-<p>All submodule should have its own pytest section under <code>tests/units/anta_tests/&lt;submodule-name&gt;.py</code>.</p>
+<p>To keep high-quality code, every implemented <code>AntaTest</code> must have a corresponding pytest unit test.</p>
+<p>Add the unit test to the appropriate submodule test file under <code>tests/units/anta_tests/test_&lt;submodule-name&gt;.py</code>, following the repository convention of adding cases to the module&rsquo;s <code>DATA</code> constant and importing the generic <code>test</code> function.</p>
+<h4 id="how-to-run-unit-tests">How to run unit tests<a class="headerlink" href="#how-to-run-unit-tests" title="Permanent link">&para;</a></h4>
+<p>To create an environment for running tests without installing development tools:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">".[cli]"</span><span class="w"> </span>--group<span class="w"> </span><span class="nb">test</span>
+</code></pre></div>
+<p>To run the unit test suite from that environment or an activated development environment:</p>
+<div class="highlight"><pre><span></span><code>pytest<span class="w"> </span>tests/units
+</code></pre></div>
+<p>To run a specific unit test module or test node:</p>
+<div class="highlight"><pre><span></span><code>pytest<span class="w"> </span>tests/units/anta_tests/test_system.py
+pytest<span class="w"> </span>tests/units/anta_tests/test_system.py::test
+</code></pre></div>
+<p>If you use <a href="https://docs.astral.sh/uv/"><code>uv</code></a> for your local workflow, it can create or update the environment before running pytest:</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>--no-default-groups<span class="w"> </span>--group<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--extra<span class="w"> </span>cli<span class="w"> </span>pytest<span class="w"> </span>tests/units
+</code></pre></div>
+<p><code>--no-default-groups</code> excludes uv&rsquo;s default <code>dev</code> group from dependency selection. By default, <code>uv run</code> retains extra packages already installed in the environment.</p>
+<p>The <code>test</code> group contains the dependencies needed to run pytest. The <code>benchmark</code> group adds the benchmark plugins. The <code>tox</code> group installs tox with the version constraints for the active Python interpreter. The <code>dev</code> group includes the test, lint, and tox groups plus the release versioning tool.</p>
+<p>Use tox when you want to run the unit tests in the same isolated environments used by CI:</p>
+<div class="highlight"><pre><span></span><code>tox<span class="w"> </span>-e<span class="w"> </span>py311<span class="w"> </span>--<span class="w"> </span>tests/units
+tox<span class="w"> </span>-e<span class="w"> </span>py311,py312,py313,py314,py315<span class="w"> </span>--<span class="w"> </span>tests/units
+</code></pre></div>
+<p>The <code>--</code> separator passes the remaining arguments to pytest, so the same file or test-node selection works with tox:</p>
+<div class="highlight"><pre><span></span><code>tox<span class="w"> </span>-e<span class="w"> </span>py311<span class="w"> </span>--<span class="w"> </span>tests/units/anta_tests/system.py
+tox<span class="w"> </span>-e<span class="w"> </span>py311<span class="w"> </span>--<span class="w"> </span>tests/units/anta_tests/test_system.py
+tox<span class="w"> </span>-e<span class="w"> </span>py311<span class="w"> </span>--<span class="w"> </span>tests/units/anta_tests/test_system.py::test
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Python versions and tox</p>
+<p>The tox environments are mapped to concrete Python versions (<code>py311</code>, <code>py312</code>, <code>py313</code>, <code>py314</code>, and <code>py315</code>). Running one tox environment requires that matching Python interpreter to be installed and discoverable on your machine; running the full matrix requires all of them.</p>
+<p><code>uv</code> can help install and manage Python interpreters, for example:</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>python<span class="w"> </span>install<span class="w"> </span><span class="m">3</span>.11<span class="w"> </span><span class="m">3</span>.12<span class="w"> </span><span class="m">3</span>.13<span class="w"> </span><span class="m">3</span>.14<span class="w"> </span><span class="m">3</span>.15
+</code></pre></div>
+<p>This does not replace tox for matrix testing in this repository. It only makes it easier to provide the Python interpreters that tox needs.</p>
+</div>
 <h4 id="how-to-write-a-unit-test-for-an-antatest-subclass">How to write a unit test for an AntaTest subclass<a class="headerlink" href="#how-to-write-a-unit-test-for-an-antatest-subclass" title="Permanent link">&para;</a></h4>
 <p>The Python modules in the <code>tests.units.anta_tests</code> package define test parameters for AntaTest subclasses unit tests.
 A generic test function is written for all unit tests of the <code>AntaTest</code> subclasses.
-In order for your unit tests to be correctly collected, you need to import the generic test function even if not used in the Python module.</p>
+In order for your unit tests to be correctly collected, you need to import the generic test function even if not used in the Python module.
+Keep this import on its own line with <code># noqa: F401</code> because pytest collects the imported function. Other imports remain subject to Ruff&rsquo;s unused-import checks.</p>
 <p>The <code>pytest_generate_tests</code> function definition in <code>conftest.py</code> is called during test collection.</p>
 <p>The <code>pytest_generate_tests</code> function will parametrize the generic test function based on the <code>DATA</code> constant defined in modules in the <code>tests.units.anta_tests</code> package.</p>
 <p>See <a href="https://docs.pytest.org/en/stable/how-to/parametrize.html#basic-pytest-generate-tests-example">https://docs.pytest.org/en/stable/how-to/parametrize.html#basic-pytest-generate-tests-example</a></p>
@@ -3218,33 +3743,40 @@ In order for your unit tests to be correctly collected, you need to import the g
 <ul>
 <li><code>eos_data</code> (list[dict]): List of data mocking EOS returned data to be passed to the test.</li>
 <li><code>inputs</code> (dict): Dictionary to instantiate the <code>test</code> inputs as defined in the class from <code>test</code>.</li>
+<li><code>version</code> (DeviceVersion | None): Optional built software-version metadata assigned directly to <code>device.version</code>. Use <code>None</code> to test unavailable version metadata.</li>
+<li><code>platform</code> (DevicePlatform | None): Optional built platform metadata assigned directly to <code>device.platform</code>; its string representation is also assigned to <code>device.hw_model</code>.</li>
 <li><code>expected</code> (dict): Expected test result structure, a dictionary containing a key
-    <code>result</code> containing one of the allowed status (<code>Literal[AntaTestStatus.SUCCESS, AntaTestStatus.FAILURE, AntaTestStatus.SKIPPED]</code>) and optionally a key <code>messages</code> which is a list(str) and each message is expected to be a substring of one of the actual messages in the TestResult object.</li>
+    <code>result</code> containing one of the allowed statuses (<code>Literal[AntaTestStatus.SUCCESS, AntaTestStatus.FAILURE, AntaTestStatus.ERROR, AntaTestStatus.SKIPPED]</code>) and optionally a key <code>messages</code> which is a list(str) and each message is expected to be a substring of one of the actual messages in the TestResult object.</li>
 </ul>
+<p>The generic unit-test helper applies the already-built <code>version</code> and <code>platform</code> metadata to the mocked device before instantiating the test. These fields model metadata populated by <code>AntaDevice.refresh()</code> in production, while parser and refresh tests separately cover conversion from raw EOS output. The <code>eos_data</code> field remains the output of the test&rsquo;s declared commands.</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">AtomicResult</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Expected atomic result of a unit test of an AntaTest subclass.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Expected atomic result of a unit test of an AntaTest subclass."""</span>
 
-    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="c1"># The expected description of this atomic result.</span>
-    <span class="n">result</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SKIPPED</span><span class="p">]</span> <span class="c1"># The expected status of this atomic result.</span>
-    <span class="n">messages</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="c1"># The expected messages of this atomic result. The strings can be a substrings of the actual messages.</span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span>  <span class="c1"># The expected description of this atomic result.</span>
+    <span class="n">result</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">ERROR</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SKIPPED</span><span class="p">]</span>  <span class="c1"># The expected status of this atomic result.</span>
+    <span class="n">messages</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span>  <span class="c1"># The expected messages of this atomic result. The strings can be a substrings of the actual messages.</span>
+
 
 <span class="k">class</span><span class="w"> </span><span class="nc">UnitTestResult</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Expected result of a unit test of an AntaTest subclass.</span>
+<span class="w">    </span><span class="sd">"""Expected result of a unit test of an AntaTest subclass.</span>
 
-<span class="sd">    For our AntaTest unit tests we expect only success, failure or skipped.</span>
-<span class="sd">    Never unset nor error.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    For our AntaTest unit tests we expect a terminal result, never unset.</span>
+<span class="sd">    """</span>
 
-    <span class="n">result</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SKIPPED</span><span class="p">]</span> <span class="c1"># The expected status of this unit test.</span>
-    <span class="n">messages</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="c1"># The expected messages of the test. The strings can be a substrings of the actual messages.</span>
-    <span class="n">atomic_results</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AtomicResult</span><span class="p">]]</span> <span class="c1"># The list of expected atomic results.</span>
+    <span class="n">result</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">ERROR</span><span class="p">,</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SKIPPED</span><span class="p">]</span>  <span class="c1"># The expected status of this unit test.</span>
+    <span class="n">messages</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span>  <span class="c1"># The expected messages of the test. The strings can be a substrings of the actual messages.</span>
+    <span class="n">atomic_results</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AtomicResult</span><span class="p">]]</span>  <span class="c1"># The list of expected atomic results.</span>
+
 
 <span class="k">class</span><span class="w"> </span><span class="nc">AntaUnitTest</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;The parameters required for a unit test of an AntaTest subclass.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""The parameters required for a unit test of an AntaTest subclass."""</span>
 
-    <span class="n">inputs</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span> <span class="c1"># The test inputs of this unit test.</span>
-    <span class="n">eos_data</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">str</span><span class="p">]</span> <span class="c1"># List of command outputs used to mock EOS commands during this unit test.</span>
+    <span class="n">inputs</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span>  <span class="c1"># The test inputs of this unit test.</span>
+    <span class="n">eos_data</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="nb">str</span><span class="p">]</span>  <span class="c1"># List of command outputs used to mock EOS commands during this unit test.</span>
+    <span class="n">version</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">DeviceVersion</span> <span class="o">|</span> <span class="kc">None</span><span class="p">]</span>  <span class="c1"># Built software-version metadata assigned directly to device.version.</span>
+    <span class="n">platform</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">DevicePlatform</span> <span class="o">|</span> <span class="kc">None</span><span class="p">]</span>  <span class="c1"># Built platform metadata assigned directly to device.platform.</span>
     <span class="n">expected</span><span class="p">:</span> <span class="n">UnitTestResult</span>  <span class="c1"># The expected result of this unit test.</span>
+
 
 <span class="n">AntaUnitTestData</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">type</span><span class="p">[</span><span class="n">AntaTest</span><span class="p">],</span> <span class="nb">str</span><span class="p">],</span> <span class="n">AntaUnitTest</span><span class="p">]</span>
 </code></pre></div>
@@ -3253,89 +3785,89 @@ In order for your unit tests to be correctly collected, you need to import the g
 <span class="kn">from</span><span class="w"> </span><span class="nn">anta.tests.system</span><span class="w"> </span><span class="kn">import</span> <span class="n">VerifyUptime</span>
 
 <span class="c1"># Import the generic test function</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">tests.units.anta_tests</span><span class="w"> </span><span class="kn">import</span> <span class="n">test</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tests.units.anta_tests</span><span class="w"> </span><span class="kn">import</span> <span class="n">test</span>  <span class="c1"># noqa: F401 - Pytest collects this imported test function.</span>
 
 <span class="c1"># Define test parameters</span>
 <span class="n">DATA</span><span class="p">:</span> <span class="n">AntaUnitTestData</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="p">(</span><span class="n">VerifyUptime</span><span class="p">,</span> <span class="s2">&quot;success&quot;</span><span class="p">):</span> <span class="p">{</span>
-    <span class="c1"># JSON output of the &#39;show uptime&#39; EOS command as defined in VerifyUptime.commands</span>
-    <span class="s2">&quot;eos_data&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;upTime&quot;</span><span class="p">:</span> <span class="mf">1186689.15</span><span class="p">,</span> <span class="s2">&quot;loadAvg&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.13</span><span class="p">,</span> <span class="mf">0.12</span><span class="p">,</span> <span class="mf">0.09</span><span class="p">],</span> <span class="s2">&quot;users&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;currentTime&quot;</span><span class="p">:</span> <span class="mf">1683186659.139859</span><span class="p">}],</span>
-    <span class="c1"># Dictionary to instantiate VerifyUptime.Input</span>
-    <span class="s2">&quot;inputs&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;minimum&quot;</span><span class="p">:</span> <span class="mi">666</span><span class="p">},</span>
-    <span class="c1"># Expected test result</span>
-    <span class="s2">&quot;expected&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">},</span>
-  <span class="p">},</span>
-  <span class="p">(</span><span class="n">VerifyUptime</span><span class="p">,</span> <span class="s2">&quot;failure&quot;</span><span class="p">):</span> <span class="p">{</span>
-    <span class="s2">&quot;eos_data&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;upTime&quot;</span><span class="p">:</span> <span class="mf">665.15</span><span class="p">,</span> <span class="s2">&quot;loadAvg&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.13</span><span class="p">,</span> <span class="mf">0.12</span><span class="p">,</span> <span class="mf">0.09</span><span class="p">],</span> <span class="s2">&quot;users&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;currentTime&quot;</span><span class="p">:</span> <span class="mf">1683186659.139859</span><span class="p">}],</span>
-    <span class="s2">&quot;inputs&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;minimum&quot;</span><span class="p">:</span> <span class="mi">666</span><span class="p">},</span>
-    <span class="c1"># If the test returns messages, it needs to be expected otherwise test will fail.</span>
-    <span class="c1"># The expected message can be a substring of the actual message.</span>
-    <span class="s2">&quot;expected&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span> <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Device uptime is 665.15 seconds&quot;</span><span class="p">]},</span>
-  <span class="p">}</span>
+    <span class="p">(</span><span class="n">VerifyUptime</span><span class="p">,</span> <span class="s2">"success"</span><span class="p">):</span> <span class="p">{</span>
+        <span class="c1"># JSON output of the 'show uptime' EOS command as defined in VerifyUptime.commands</span>
+        <span class="s2">"eos_data"</span><span class="p">:</span> <span class="p">[{</span><span class="s2">"upTime"</span><span class="p">:</span> <span class="mf">1186689.15</span><span class="p">,</span> <span class="s2">"loadAvg"</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.13</span><span class="p">,</span> <span class="mf">0.12</span><span class="p">,</span> <span class="mf">0.09</span><span class="p">],</span> <span class="s2">"users"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"currentTime"</span><span class="p">:</span> <span class="mf">1683186659.139859</span><span class="p">}],</span>
+        <span class="c1"># Dictionary to instantiate VerifyUptime.Input</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"minimum"</span><span class="p">:</span> <span class="mi">666</span><span class="p">},</span>
+        <span class="c1"># Expected test result</span>
+        <span class="s2">"expected"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"result"</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">},</span>
+    <span class="p">},</span>
+    <span class="p">(</span><span class="n">VerifyUptime</span><span class="p">,</span> <span class="s2">"failure"</span><span class="p">):</span> <span class="p">{</span>
+        <span class="s2">"eos_data"</span><span class="p">:</span> <span class="p">[{</span><span class="s2">"upTime"</span><span class="p">:</span> <span class="mf">665.15</span><span class="p">,</span> <span class="s2">"loadAvg"</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.13</span><span class="p">,</span> <span class="mf">0.12</span><span class="p">,</span> <span class="mf">0.09</span><span class="p">],</span> <span class="s2">"users"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"currentTime"</span><span class="p">:</span> <span class="mf">1683186659.139859</span><span class="p">}],</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"minimum"</span><span class="p">:</span> <span class="mi">666</span><span class="p">},</span>
+        <span class="c1"># If the test returns messages, it needs to be expected otherwise test will fail.</span>
+        <span class="c1"># The expected message can be a substring of the actual message.</span>
+        <span class="s2">"expected"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"result"</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span> <span class="s2">"messages"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Device uptime is 665.15 seconds"</span><span class="p">]},</span>
+    <span class="p">},</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Test example for <code>anta.tests.connectivity.VerifyReachability</code> AntaTest that contains atomic results.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">anta.tests.connectivity</span><span class="w"> </span><span class="kn">import</span> <span class="n">VerifyReachability</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">tests.units.anta_tests</span><span class="w"> </span><span class="kn">import</span> <span class="n">test</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tests.units.anta_tests</span><span class="w"> </span><span class="kn">import</span> <span class="n">test</span>  <span class="c1"># noqa: F401 - Pytest collects this imported test function.</span>
 
 <span class="n">DATA</span><span class="p">:</span> <span class="n">AntaUnitTestData</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="p">(</span><span class="n">VerifyReachability</span><span class="p">,</span> <span class="s2">&quot;failure-ip&quot;</span><span class="p">):</span> <span class="p">{</span>
-        <span class="s2">&quot;inputs&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;hosts&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.11&quot;</span><span class="p">,</span> <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.5&quot;</span><span class="p">},</span> <span class="p">{</span><span class="s2">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.2&quot;</span><span class="p">,</span> <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.5&quot;</span><span class="p">}]},</span>
-        <span class="s2">&quot;eos_data&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">(</span><span class="n">VerifyReachability</span><span class="p">,</span> <span class="s2">"failure-ip"</span><span class="p">):</span> <span class="p">{</span>
+        <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"hosts"</span><span class="p">:</span> <span class="p">[{</span><span class="s2">"destination"</span><span class="p">:</span> <span class="s2">"10.0.0.11"</span><span class="p">,</span> <span class="s2">"source"</span><span class="p">:</span> <span class="s2">"10.0.0.5"</span><span class="p">},</span> <span class="p">{</span><span class="s2">"destination"</span><span class="p">:</span> <span class="s2">"10.0.0.2"</span><span class="p">,</span> <span class="s2">"source"</span><span class="p">:</span> <span class="s2">"10.0.0.5"</span><span class="p">}]},</span>
+        <span class="s2">"eos_data"</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
-                <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="s2">&quot;ping: sendmsg: Network is unreachable</span><span class="se">\n</span><span class="s2">                ping: sendmsg: Network is unreachable</span><span class="se">\n</span><span class="s2">                &quot;</span>
-                    <span class="s2">&quot;PING 10.0.0.11 (10.0.0.11) from 10.0.0.5 : 72(100) bytes of data.</span><span class="se">\n\n</span><span class="s2">                --- 10.0.0.11 ping statistics ---</span><span class="se">\n</span><span class="s2">&quot;</span>
-                    <span class="s2">&quot;                2 packets transmitted, 0 received, 100% packet loss, time 10ms</span><span class="se">\n\n\n</span><span class="s2">                &quot;</span>
+                <span class="s2">"messages"</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">"ping: sendmsg: Network is unreachable</span><span class="se">\n</span><span class="s2">                ping: sendmsg: Network is unreachable</span><span class="se">\n</span><span class="s2">                "</span>
+                    <span class="s2">"PING 10.0.0.11 (10.0.0.11) from 10.0.0.5 : 72(100) bytes of data.</span><span class="se">\n\n</span><span class="s2">                --- 10.0.0.11 ping statistics ---</span><span class="se">\n</span><span class="s2">"</span>
+                    <span class="s2">"                2 packets transmitted, 0 received, 100% packet loss, time 10ms</span><span class="se">\n\n\n</span><span class="s2">                "</span>
                 <span class="p">]</span>
             <span class="p">},</span>
             <span class="p">{</span>
-                <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="s2">&quot;PING 10.0.0.2 (10.0.0.2) from 10.0.0.5 : 72(100) bytes of data.</span><span class="se">\n</span><span class="s2">                80 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=0.247 ms</span><span class="se">\n</span><span class="s2">&quot;</span>
-                    <span class="s2">&quot;                80 bytes from 10.0.0.2: icmp_seq=2 ttl=64 time=0.072 ms</span><span class="se">\n\n</span><span class="s2">                --- 10.0.0.2 ping statistics ---</span><span class="se">\n</span><span class="s2">                &quot;</span>
-                    <span class="s2">&quot;2 packets transmitted, 2 received, 0% packet loss, time 0ms</span><span class="se">\n</span><span class="s2">                rtt min/avg/max/mdev = 0.072/0.159/0.247/0.088 ms,&quot;</span>
-                    <span class="s2">&quot; ipg/ewma 0.370/0.225 ms</span><span class="se">\n\n</span><span class="s2">                &quot;</span>
+                <span class="s2">"messages"</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">"PING 10.0.0.2 (10.0.0.2) from 10.0.0.5 : 72(100) bytes of data.</span><span class="se">\n</span><span class="s2">                80 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=0.247 ms</span><span class="se">\n</span><span class="s2">"</span>
+                    <span class="s2">"                80 bytes from 10.0.0.2: icmp_seq=2 ttl=64 time=0.072 ms</span><span class="se">\n\n</span><span class="s2">                --- 10.0.0.2 ping statistics ---</span><span class="se">\n</span><span class="s2">                "</span>
+                    <span class="s2">"2 packets transmitted, 2 received, 0% packet loss, time 0ms</span><span class="se">\n</span><span class="s2">                rtt min/avg/max/mdev = 0.072/0.159/0.247/0.088 ms,"</span>
+                    <span class="s2">" ipg/ewma 0.370/0.225 ms</span><span class="se">\n\n</span><span class="s2">                "</span>
                 <span class="p">]</span>
             <span class="p">},</span>
         <span class="p">],</span>
-        <span class="s2">&quot;expected&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span>
-            <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Unreachable Host 10.0.0.11 (src: 10.0.0.5, vrf: default, size: 100B, repeat: 2)&quot;</span><span class="p">],</span>
+        <span class="s2">"expected"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"result"</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span>
+            <span class="s2">"messages"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Unreachable Host 10.0.0.11 (src: 10.0.0.5, vrf: default, size: 100B, repeat: 2)"</span><span class="p">],</span>
             <span class="c1"># This test has implemented atomic results.</span>
             <span class="c1"># Expected atomic results must be specified or the test will fail. Order matters.</span>
             <span class="c1"># The atomic results must be defined in the same order.</span>
-            <span class="s2">&quot;atomic_results&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"atomic_results"</span><span class="p">:</span> <span class="p">[</span>
                 <span class="p">{</span>
                     <span class="c1"># Expected atomic result description</span>
-                    <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Destination 10.0.0.11 from 10.0.0.5 in VRF default&quot;</span><span class="p">,</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Destination 10.0.0.11 from 10.0.0.5 in VRF default"</span><span class="p">,</span>
                     <span class="c1"># If the atomic result is tied to a subset of the test inputs, it needs to be added here otherwise the test will fail.</span>
-                    <span class="s2">&quot;inputs&quot;</span><span class="p">:</span> <span class="p">{</span>
-                        <span class="s2">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.11&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;df_bit&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                        <span class="s2">&quot;repeat&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-                        <span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-                        <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.5&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;vrf&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span>
+                    <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">"destination"</span><span class="p">:</span> <span class="s2">"10.0.0.11"</span><span class="p">,</span>
+                        <span class="s2">"df_bit"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+                        <span class="s2">"repeat"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                        <span class="s2">"size"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+                        <span class="s2">"source"</span><span class="p">:</span> <span class="s2">"10.0.0.5"</span><span class="p">,</span>
+                        <span class="s2">"vrf"</span><span class="p">:</span> <span class="s2">"default"</span><span class="p">,</span>
                     <span class="p">},</span>
                     <span class="c1"># Expected atomic result status</span>
-                    <span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span>
+                    <span class="s2">"result"</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">FAILURE</span><span class="p">,</span>
                     <span class="c1"># If the atomic result returns messages, it needs to be expected otherwise test will fail.</span>
                     <span class="c1"># The expected message can be a substring of the actual message.</span>
                     <span class="c1"># The messages must be defined in the same order.</span>
-                    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Unreachable Destination 10.0.0.11 from 10.0.0.5 in VRF default&quot;</span><span class="p">],</span>
+                    <span class="s2">"messages"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Unreachable Destination 10.0.0.11 from 10.0.0.5 in VRF default"</span><span class="p">],</span>
                 <span class="p">},</span>
                 <span class="p">{</span>
-                    <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Host 10.0.0.2 in VRF default&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;inputs&quot;</span><span class="p">:</span> <span class="p">{</span>
-                        <span class="s2">&quot;destination&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.2&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;df_bit&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
-                        <span class="s2">&quot;repeat&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-                        <span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-                        <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.5&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;vrf&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Host 10.0.0.2 in VRF default"</span><span class="p">,</span>
+                    <span class="s2">"inputs"</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">"destination"</span><span class="p">:</span> <span class="s2">"10.0.0.2"</span><span class="p">,</span>
+                        <span class="s2">"df_bit"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+                        <span class="s2">"repeat"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                        <span class="s2">"size"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+                        <span class="s2">"source"</span><span class="p">:</span> <span class="s2">"10.0.0.5"</span><span class="p">,</span>
+                        <span class="s2">"vrf"</span><span class="p">:</span> <span class="s2">"default"</span><span class="p">,</span>
                     <span class="p">},</span>
-                    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[],</span>
-                    <span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">,</span>
+                    <span class="s2">"messages"</span><span class="p">:</span> <span class="p">[],</span>
+                    <span class="s2">"result"</span><span class="p">:</span> <span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">,</span>
                 <span class="p">},</span>
             <span class="p">],</span>
         <span class="p">},</span>
@@ -3356,7 +3888,6 @@ Check<span class="w"> </span>and<span class="w"> </span>insert<span class="w"> <
 Check<span class="w"> </span>and<span class="w"> </span>insert<span class="w"> </span>license<span class="w"> </span>on<span class="w"> </span>Markdown<span class="w"> </span>files...............................Passed
 Run<span class="w"> </span>Ruff<span class="w"> </span>linter..........................................................Passed
 Run<span class="w"> </span>Ruff<span class="w"> </span>formatter.......................................................Passed
-Check<span class="w"> </span>code<span class="w"> </span>style<span class="w"> </span>with<span class="w"> </span>pylint.............................................Passed
 Checks<span class="w"> </span><span class="k">for</span><span class="w"> </span>common<span class="w"> </span>misspellings<span class="w"> </span><span class="k">in</span><span class="w"> </span>text<span class="w"> </span>files.............................Passed
 PyRight<span class="w"> </span>static<span class="w"> </span><span class="nb">type</span><span class="w"> </span>checker..............................................Passed
 Check<span class="w"> </span><span class="k">for</span><span class="w"> </span>Linting<span class="w"> </span>errors<span class="w"> </span>on<span class="w"> </span>Markdown<span class="w"> </span>files...............................Passed
@@ -3370,7 +3901,8 @@ Generate<span class="w"> </span>doc<span class="w"> </span>snippets.............
 <p><a href="https://zensical.org/"><code>Zensical</code></a> is used to preview and build the documentation. A PR should always update the documentation to avoid documentation debt.</p>
 <p>Documentation source lives under <code>docs/</code> and is built from the repository root. Do not commit rendered <code>site/</code> output.</p>
 <h4 id="install-documentation-requirements">Install documentation requirements<a class="headerlink" href="#install-documentation-requirements" title="Permanent link">&para;</a></h4>
-<p>Run pip to install the documentation requirements from the root of the repo:</p>
+<p>Documentation tooling requires Python 3.11 or newer. ANTA&rsquo;s library Python requirements are defined separately in <code>pyproject.toml</code>.</p>
+<p>Run pip with a compatible Python interpreter to install the documentation requirements from the root of the repo:</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="w"> </span>--group<span class="w"> </span>doc<span class="w"> </span>-e<span class="w"> </span>tools/zensical_extensions
 </code></pre></div>
 <h4 id="testing-documentation">Testing documentation<a class="headerlink" href="#testing-documentation" title="Permanent link">&para;</a></h4>
@@ -3386,20 +3918,51 @@ Generate<span class="w"> </span>doc<span class="w"> </span>snippets.............
 <p>Use <code>zensical build --clean</code> when you want to remove the previous generated output before building locally:</p>
 <div class="highlight"><pre><span></span><code>zensical<span class="w"> </span>build<span class="w"> </span>--clean
 </code></pre></div>
+<h4 id="preserve-page-and-heading-links">Preserve page and heading links<a class="headerlink" href="#preserve-page-and-heading-links" title="Permanent link">&para;</a></h4>
+<p>When moving a documentation page or renaming a heading, preserve its published URL with Zensical&rsquo;s native redirects. Existing bookmarks and links from issues, external guides, and release notes may still use the old location. Update links in the repository to the new destination as well.</p>
+<p>Add redirects to <code>zensical.toml</code> using paths relative to <code>docs/</code>, including the <code>.md</code> extension. Do not put deployment prefixes such as <code>/main/</code> or <code>/stable/</code> in these source paths.</p>
+<div class="highlight"><pre><span></span><code><span class="k">[project.plugins.redirects.redirect_maps]</span>
+<span class="c1"># Move a whole page.</span>
+<span class="s2">"old-guide.md"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"guides/new-guide.md"</span>
+<span class="c1"># Rename a heading on an existing page.</span>
+<span class="s2">"guide.md#old-heading"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"guide.md#new-heading"</span>
+<span class="c1"># Move a section when splitting a page.</span>
+<span class="s2">"guide.md#moved-section"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"guides/new-guide.md#moved-section"</span>
+</code></pre></div>
+<p>These paths are examples; add mappings only for actual moves and existing targets. Check the rendered heading IDs rather than assuming how Zensical will derive them. Keep redirects pointing to the final destination when reorganizing content again, and avoid cycles.</p>
+<p>Run <code>zensical build --clean --strict</code>, then use the local preview to open each old page URL and fragment directly. Confirm that the correct section is displayed, including targets inside collapsed details or content tabs. For a versioned deployment, also check a local Mike preview so the redirect stays within the selected version. Existing historical release builds acquire new redirects only if they are rebuilt.</p>
+<h4 id="link-to-python-api-objects">Link to Python API objects<a class="headerlink" href="#link-to-python-api-objects" title="Permanent link">&para;</a></h4>
+<p>Use object references when linking prose to generated Python API documentation:</p>
+<div class="highlight"><pre><span></span><code>Create an [<span class="nt">AntaInventory</span>][<span class="nl">anta.inventory.AntaInventory</span>] and add an
+[<span class="nt">AsyncEOSDevice</span>][<span class="nl">anta.device.AsyncEOSDevice</span>].
+</code></pre></div>
+<p><code>autorefs</code> resolves these identifiers to their documented locations without hard-coding the API page path or heading anchor. Keep ordinary Markdown links for guides and other authored pages.</p>
+<p>Register new object identifiers under <code>MD052.ignored_labels</code> in <code>.github/.markdownlint-cli2.yaml</code> (lowercase with underscores removed, as reported by MD052). This central list allows autorefs syntax while keeping MD052 enabled for ordinary reference links; it does not validate Python objects. After adding or changing an object reference, run <code>zensical build --strict</code> and check that the link opens the intended object in the rendered site.</p>
 <h4 id="generated-cli-snippets">Generated CLI snippets<a class="headerlink" href="#generated-cli-snippets" title="Permanent link">&para;</a></h4>
 <p>The CLI help blocks published in the documentation are generated from the current Click output. After changing CLI commands, options, or help text, refresh the snippets and verify that the generated files are committed:</p>
 <div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>--extra<span class="w"> </span>cli<span class="w"> </span>python<span class="w"> </span>docs/scripts/generate_doc_snippets.py
 git<span class="w"> </span>diff<span class="w"> </span>--exit-code<span class="w"> </span>--<span class="w"> </span>docs/snippets
-<span class="nb">test</span><span class="w"> </span>-z<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>git<span class="w"> </span>status<span class="w"> </span>--porcelain<span class="w"> </span>--<span class="w"> </span>docs/snippets<span class="k">)</span><span class="s2">&quot;</span>
+<span class="nb">test</span><span class="w"> </span>-z<span class="w"> </span><span class="s2">"</span><span class="k">$(</span>git<span class="w"> </span>status<span class="w"> </span>--porcelain<span class="w"> </span>--<span class="w"> </span>docs/snippets<span class="k">)</span><span class="s2">"</span>
 </code></pre></div>
-<p>The <code>doc-snippets</code> pre-commit hook runs the generator for CLI changes, and CI runs the same freshness check before building the documentation.</p>
-<h4 id="build-class-diagram">Build class diagram<a class="headerlink" href="#build-class-diagram" title="Permanent link">&para;</a></h4>
-<p>To build class diagram to use in API documentation, you can use <code>pyreverse</code> part of <code>pylint</code> with <a href="https://graphviz.org/"><code>graphviz</code></a> installed for jpeg generation.</p>
-<div class="highlight"><pre><span></span><code>pyreverse<span class="w"> </span>anta<span class="w"> </span>--colorized<span class="w"> </span>-a1<span class="w"> </span>-s1<span class="w"> </span>-o<span class="w"> </span>jpeg<span class="w"> </span>-m<span class="w"> </span><span class="nb">true</span><span class="w"> </span>-k<span class="w"> </span>--output-directory<span class="w"> </span>docs/imgs/uml/<span class="w"> </span>-c<span class="w"> </span>&lt;FQDN<span class="w"> </span>anta<span class="w"> </span>class&gt;
+<p>The <code>doc-snippets</code> pre-commit hook runs the generator for CLI changes, and the autofix workflow commits any updated snippets to the pull request.</p>
+<h4 id="curated-class-diagram">Curated class diagram<a class="headerlink" href="#curated-class-diagram" title="Permanent link">&para;</a></h4>
+<p>The class diagram published in the API documentation is a curated Mermaid diagram, not a generated artifact. Generated class diagrams were considered, but the output is either too sparse for documentation or too noisy because it includes implementation details and third-party classes.</p>
+<p>When changing public classes, attributes, methods, inheritance, or relationships in the ANTA API, review and update <code>docs/api/class-diagram.mmd</code> in the same PR.</p>
+<p>Keep the diagram focused on the API overview. Include public fields, important properties, class variables, constructors or class methods used by users, and relationships that help explain how the main objects fit together. Avoid adding private implementation details unless they are needed to explain an important relationship.</p>
+<p>Use the existing Mermaid conventions in <code>docs/api/class-diagram.mmd</code>:</p>
+<ul>
+<li>Put classes in the existing namespaces so the diagram keeps the Inventory, Device, Catalog, Test, and Result Manager layout.</li>
+<li>Mark Pydantic models with <code>:::pydantic</code>.</li>
+<li>Mark dataclasses with <code>:::dataclass</code>.</li>
+<li>Add <code>&lt;&lt;Dataclass&gt;&gt;</code> or <code>&lt;&lt;Frozen Dataclass&gt;&gt;</code> in the class body for dataclasses.</li>
+<li>Keep the color definitions at the bottom of the file in sync with the legend on the API page.</li>
+</ul>
+<p>Build the documentation locally and inspect the rendered diagram after editing it:</p>
+<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>run<span class="w"> </span>--group<span class="w"> </span>doc<span class="w"> </span>--with-editable<span class="w"> </span>tools/zensical_extensions<span class="w"> </span>zensical<span class="w"> </span>build<span class="w"> </span>--clean<span class="w"> </span>--strict
 </code></pre></div>
-<p>Image will be generated under <code>docs/imgs/uml/</code> and can be inserted in your documentation.</p>
+<p>The rendered diagram has a fullscreen button for readability. Use it to check that labels are visible and that the layout still reads correctly on a screen.</p>
 <h4 id="checking-links">Checking links<a class="headerlink" href="#checking-links" title="Permanent link">&para;</a></h4>
-<p>Writing documentation is crucial but managing links can be cumbersome. To be sure there is no dead links, you can use <a href="https://github.com/raviqqe/muffet"><code>muffet</code></a> with the following command:</p>
+<p>Writing documentation is crucial but managing links can be cumbersome. To be sure there are no dead links, you can use <a href="https://github.com/raviqqe/muffet"><code>muffet</code></a> with the following command:</p>
 <div class="highlight"><pre><span></span><code>muffet<span class="w"> </span>-c<span class="w"> </span><span class="m">2</span><span class="w"> </span>--color<span class="o">=</span>always<span class="w"> </span>http://127.0.0.1:8000<span class="w"> </span>-e<span class="w"> </span>fonts.gstatic.com<span class="w"> </span>-b<span class="w"> </span><span class="m">8192</span>
 </code></pre></div>
 <h3 id="continuous-integration">Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permanent link">&para;</a></h3>
@@ -3439,7 +4002,7 @@ git<span class="w"> </span>diff<span class="w"> </span>--exit-code<span class="w
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    June 26, 2026
+    November 19, 2026
   </span>
 
     
@@ -3501,7 +4064,7 @@ git<span class="w"> </span>diff<span class="w"> </span>--exit-code<span class="w
       
     
     <a href="https://github.com/aristanetworks/anta" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
     
@@ -3512,7 +4075,7 @@ git<span class="w"> </span>diff<span class="w"> </span>--exit-code<span class="w
       
     
     <a href="https://github.com/aristanetworks/anta/pkgs/container/anta" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
     </a>
   
     
@@ -3523,7 +4086,7 @@ git<span class="w"> </span>diff<span class="w"> </span>--exit-code<span class="w
       
     
     <a href="https://pypi.org/project/anta/" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
     </a>
   
 </div>
@@ -3533,7 +4096,7 @@ git<span class="w"> </span>diff<span class="w"> </span>--exit-code<span class="w
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -3541,14 +4104,22 @@ git<span class="w"> </span>diff<span class="w"> </span>--exit-code<span class="w
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"search":"../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"redirect":null,"search":"../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.ee611ef6.min.js"></script>
+      <script src="../assets/javascripts/bundle.3cb411a8.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+        <script src="../stylesheets/mermaid-zoom.js"></script>
+      
+        <script src="../stylesheets/glightbox-zoom.js"></script>
       
     
   </body>

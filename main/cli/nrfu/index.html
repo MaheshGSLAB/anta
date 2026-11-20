@@ -12,7 +12,8 @@
         <meta name="author" content="Khelil Sator">
       
       
-        <link rel="canonical" href="https://anta.arista.com/main/cli/nrfu/">
+        <link rel="canonical" href="https://anta.arista.com/stable/cli/nrfu/">
+      
       
       
         <link rel="prev" href="../overview/">
@@ -25,7 +26,7 @@
       
       
       <link rel="icon" href="../../imgs/favicon.ico">
-      <meta name="generator" content="zensical-0.0.46">
+      <meta name="generator" content="zensical-0.1.1">
     
     
       
@@ -36,12 +37,12 @@
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.19d3147f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.ebb7f775.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.b60ce83d.min.css">
       
       
 
@@ -83,14 +84,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#nrfu-command-overview" class="md-skip">
-          Skip to content
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -103,14 +101,14 @@
               
   <span id="current-version">
     
-      This is the documentation from the 'main' branch which is not a stable release.
+      You're not viewing the latest version.
     
     <a href="../../../stable/cli/nrfu/"><strong>Click here to go to latest stable release.</strong></a>
   </span>
   
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../..",location),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -125,12 +123,13 @@
     <a href="../.." title="Arista Network Test Automation - ANTA" class="md-header__button md-logo" aria-label="Arista Network Test Automation - ANTA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+    <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+      <span class="md-visually-hidden">Navigation</span>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -182,9 +181,10 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+        <label class="md-header__button md-icon" for="__search">
           
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+          <span class="md-visually-hidden">Search</span>
         </label>
         <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
   <button type="button" class="md-search__button">
@@ -198,7 +198,7 @@
         <a href="https://github.com/aristanetworks/anta" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
   </div>
   <div class="md-source__repository">
     ANTA on Github
@@ -236,7 +236,7 @@
     <a href="../.." title="Arista Network Test Automation - ANTA" class="md-nav__button md-logo" aria-label="Arista Network Test Automation - ANTA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
 
     </a>
     Arista Network Test Automation - ANTA
@@ -246,7 +246,7 @@
       <a href="https://github.com/aristanetworks/anta" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
   </div>
   <div class="md-source__repository">
     ANTA on Github
@@ -419,18 +419,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   ANTA CLI
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -454,10 +455,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -872,10 +873,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -899,10 +900,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -926,10 +927,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -953,10 +954,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -980,10 +981,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1007,10 +1008,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1034,10 +1035,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1061,10 +1062,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1088,10 +1089,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -1107,9 +1109,7 @@
     
       
         
-      
-        
-      
+          
         
       
         
@@ -1125,48 +1125,58 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reports/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
     
   
-  Advanced Usages
+  Reports
 
     
   </span>
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Advanced Usages
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+            </a>
             
               
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Reports
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
                 
+              
+                
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../advanced_usages/caching/" class="md-nav__link">
+      <a href="../../reports/anta/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Caching in ANTA
+  ANTA Test Reports
 
     
   </span>
@@ -1177,91 +1187,11 @@
     </li>
   
 
-              
-            
-              
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../advanced_usages/custom-tests/" class="md-nav__link">
+              
+            </ul>
+          </nav>
         
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Developing ANTA tests
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../advanced_usages/as-python-lib/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  ANTA as a Python Library
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../advanced_usages/env-vars/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Environment Variables
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1364,18 +1294,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1399,10 +1330,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1426,10 +1357,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1453,10 +1384,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1480,10 +1411,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1507,10 +1438,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1534,10 +1465,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1561,10 +1492,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1588,10 +1519,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1615,10 +1546,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1642,10 +1573,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1669,10 +1600,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1696,10 +1627,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1723,10 +1654,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1750,10 +1681,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1777,10 +1708,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1804,10 +1735,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1831,10 +1762,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1858,10 +1789,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1885,10 +1816,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1912,10 +1843,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1959,18 +1890,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_21">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7_21">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Routing
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1994,10 +1926,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2021,10 +1953,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2048,10 +1980,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2075,18 +2007,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2110,10 +2043,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2137,10 +2070,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2164,10 +2097,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2191,10 +2124,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2218,10 +2151,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2245,10 +2178,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2272,10 +2205,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2299,10 +2232,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2326,10 +2259,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2343,18 +2277,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -2382,6 +2304,450 @@
   <span class="md-ellipsis">
     
   
+  Security Advisory
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Security Advisory
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-advisory/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Usage
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-advisory/reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Report formats and results
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tests
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Tests
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-advisory/tests-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-advisory/tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tests
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security-advisory/lab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Test in the lab
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Advanced Usages
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Advanced Usages
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced_usages/caching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Caching in ANTA
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced_usages/custom-tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Developing ANTA tests
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced_usages/as-python-lib/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ANTA as a Python Library
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced_usages/env-vars/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Environment Variables
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
   API Documentation
 
     
@@ -2392,18 +2758,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   API Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2427,10 +2794,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2454,10 +2821,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2481,10 +2848,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2508,10 +2875,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2535,10 +2902,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2560,10 +2927,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_6" >
         
           
-          <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_6" id="__nav_10_6_label" tabindex="0">
             
   
   
@@ -2580,18 +2947,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_6">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2615,10 +2983,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2642,10 +3010,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2669,18 +3037,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2704,10 +3073,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2731,17 +3100,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_8" >
         
           
-          <label class="md-nav__link" for="__nav_8_8" id="__nav_8_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_8" id="__nav_10_8_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-  Reporters
+  Reporter API
 
     
   </span>
@@ -2751,18 +3120,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_8">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-  Reporters
+  Reporter API
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2786,10 +3156,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2813,10 +3183,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2840,10 +3210,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2867,18 +3237,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2902,10 +3273,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2929,10 +3300,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3491,13 +3863,15 @@
 
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
+
   
   
 
 
-  <h1 id="__skip">Execute Network Readiness For Use (NRFU) Testing</h1>
+  <h1>NRFU</h1>
 
 <!--
   ~ Copyright (c) 2023-2026 Arista Networks, Inc.
@@ -3514,6 +3888,7 @@
 <li><a href="#performing-nrfu-and-saving-results-in-a-csv-file">CSV report</a></li>
 <li><a href="#performing-nrfu-and-saving-results-in-a-markdown-file">Markdown report</a></li>
 </ul>
+<p>See <a href="../../reports/anta/">ANTA Test Reports</a> for help choosing a format and for the corresponding Python reporter APIs.</p>
 <h3 id="nrfu-command-overview">NRFU Command overview<a class="headerlink" href="#nrfu-command-overview" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>anta<span class="w"> </span>nrfu<span class="w"> </span>--help
 Usage:<span class="w"> </span>anta<span class="w"> </span>nrfu<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>COMMAND<span class="o">]</span><span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
@@ -3524,11 +3899,11 @@ Options:
 <span class="w">  </span>-u,<span class="w"> </span>--username<span class="w"> </span>TEXT<span class="w">             </span>Username<span class="w"> </span>to<span class="w"> </span>connect<span class="w"> </span>to<span class="w"> </span>EOS<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
 <span class="w">                                  </span>ANTA_USERNAME<span class="p">;</span><span class="w"> </span>required<span class="o">]</span>
 <span class="w">  </span>-p,<span class="w"> </span>--password<span class="w"> </span>TEXT<span class="w">             </span>Password<span class="w"> </span>to<span class="w"> </span>connect<span class="w"> </span>to<span class="w"> </span>EOS<span class="w"> </span>that<span class="w"> </span>must<span class="w"> </span>be
-<span class="w">                                  </span>provided.<span class="w"> </span>It<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>prompted<span class="w"> </span>using<span class="w"> </span><span class="s1">&#39;--</span>
-<span class="s1">                                  prompt&#39;</span><span class="w"> </span>option.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:<span class="w"> </span>ANTA_PASSWORD<span class="o">]</span>
+<span class="w">                                  </span>provided.<span class="w"> </span>It<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>prompted<span class="w"> </span>using<span class="w"> </span><span class="s1">'--</span>
+<span class="s1">                                  prompt'</span><span class="w"> </span>option.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:<span class="w"> </span>ANTA_PASSWORD<span class="o">]</span>
 <span class="w">  </span>--enable-password<span class="w"> </span>TEXT<span class="w">          </span>Password<span class="w"> </span>to<span class="w"> </span>access<span class="w"> </span>EOS<span class="w"> </span>Privileged<span class="w"> </span>EXEC<span class="w"> </span>mode.
-<span class="w">                                  </span>It<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>prompted<span class="w"> </span>using<span class="w"> </span><span class="s1">&#39;--prompt&#39;</span><span class="w"> </span>option.
-<span class="w">                                  </span>Requires<span class="w"> </span><span class="s1">&#39;--enable&#39;</span><span class="w"> </span>option.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
+<span class="w">                                  </span>It<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>prompted<span class="w"> </span>using<span class="w"> </span><span class="s1">'--prompt'</span><span class="w"> </span>option.
+<span class="w">                                  </span>Requires<span class="w"> </span><span class="s1">'--enable'</span><span class="w"> </span>option.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
 <span class="w">                                  </span>ANTA_ENABLE_PASSWORD<span class="o">]</span>
 <span class="w">  </span>--enable<span class="w">                        </span>Some<span class="w"> </span>commands<span class="w"> </span>may<span class="w"> </span>require<span class="w"> </span>EOS<span class="w"> </span>Privileged
 <span class="w">                                  </span>EXEC<span class="w"> </span>mode.<span class="w"> </span>This<span class="w"> </span>option<span class="w"> </span>tries<span class="w"> </span>to<span class="w"> </span>access<span class="w"> </span>this
@@ -3543,28 +3918,32 @@ Options:
 <span class="w">                                  </span>ANTA_INSECURE<span class="o">]</span>
 <span class="w">  </span>--disable-cache<span class="w">                 </span>Disable<span class="w"> </span>cache<span class="w"> </span>globally.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
 <span class="w">                                  </span>ANTA_DISABLE_CACHE<span class="o">]</span>
+<span class="w">  </span>--use-session-auth<span class="w"> </span>/<span class="w"> </span>--no-session-auth
+<span class="w">                                  </span>Enable<span class="w"> </span>or<span class="w"> </span>explicitly<span class="w"> </span>disable<span class="w"> </span>eAPI<span class="w"> </span>session
+<span class="w">                                  </span>authentication<span class="w"> </span>globally.<span class="w"> </span>When<span class="w"> </span>unset,<span class="w"> </span>per-
+<span class="w">                                  </span>device<span class="w"> </span>inventory<span class="w"> </span>values<span class="w"> </span>apply.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
+<span class="w">                                  </span>ANTA_USE_SESSION_AUTH<span class="o">]</span>
 <span class="w">  </span>-i,<span class="w"> </span>--inventory<span class="w"> </span>FILE<span class="w">            </span>Path<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>inventory<span class="w"> </span>YAML<span class="w"> </span>file.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
 <span class="w">                                  </span>ANTA_INVENTORY<span class="p">;</span><span class="w"> </span>required<span class="o">]</span>
-<span class="w">  </span>--inventory-format<span class="w"> </span><span class="o">[</span>yaml<span class="p">|</span>json<span class="o">]</span><span class="w">  </span>Format<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>inventory<span class="w"> </span>file,<span class="w"> </span>either<span class="w"> </span><span class="s1">&#39;yaml&#39;</span>
-<span class="w">                                  </span>or<span class="w"> </span><span class="s1">&#39;json&#39;</span><span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:<span class="w"> </span>ANTA_INVENTORY_FORMAT<span class="o">]</span>
+<span class="w">  </span>--inventory-format<span class="w"> </span><span class="o">[</span>yaml<span class="p">|</span>json<span class="o">]</span><span class="w">  </span>Format<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>inventory<span class="w"> </span>file,<span class="w"> </span>either<span class="w"> </span><span class="s1">'yaml'</span>
+<span class="w">                                  </span>or<span class="w"> </span><span class="s1">'json'</span><span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:<span class="w"> </span>ANTA_INVENTORY_FORMAT<span class="o">]</span>
 <span class="w">  </span>--tags<span class="w"> </span>TEXT<span class="w">                     </span>List<span class="w"> </span>of<span class="w"> </span>tags<span class="w"> </span>using<span class="w"> </span>comma<span class="w"> </span>as<span class="w"> </span>separator:
 <span class="w">                                  </span>tag1,tag2,tag3.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:<span class="w"> </span>ANTA_TAGS<span class="o">]</span>
 <span class="w">  </span>-c,<span class="w"> </span>--catalog<span class="w"> </span>FILE<span class="w">              </span>Path<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span><span class="nb">test</span><span class="w"> </span>catalog<span class="w"> </span>file<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
 <span class="w">                                  </span>ANTA_CATALOG<span class="p">;</span><span class="w"> </span>required<span class="o">]</span>
-<span class="w">  </span>--catalog-format<span class="w"> </span><span class="o">[</span>yaml<span class="p">|</span>json<span class="o">]</span><span class="w">    </span>Format<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>catalog<span class="w"> </span>file,<span class="w"> </span>either<span class="w"> </span><span class="s1">&#39;yaml&#39;</span><span class="w"> </span>or
-<span class="w">                                  </span><span class="s1">&#39;json&#39;</span><span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:<span class="w"> </span>ANTA_CATALOG_FORMAT<span class="o">]</span>
+<span class="w">  </span>--catalog-format<span class="w"> </span><span class="o">[</span>yaml<span class="p">|</span>json<span class="o">]</span><span class="w">    </span>Format<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>catalog<span class="w"> </span>file,<span class="w"> </span>either<span class="w"> </span><span class="s1">'yaml'</span><span class="w"> </span>or
+<span class="w">                                  </span><span class="s1">'json'</span><span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:<span class="w"> </span>ANTA_CATALOG_FORMAT<span class="o">]</span>
 <span class="w">  </span>-d,<span class="w"> </span>--device<span class="w"> </span>TEXT<span class="w">               </span>Run<span class="w"> </span>tests<span class="w"> </span>on<span class="w"> </span>a<span class="w"> </span>specific<span class="w"> </span>device.<span class="w"> </span>Can<span class="w"> </span>be
 <span class="w">                                  </span>provided<span class="w"> </span>multiple<span class="w"> </span>times.
 <span class="w">  </span>-t,<span class="w"> </span>--test<span class="w"> </span>TEXT<span class="w">                 </span>Run<span class="w"> </span>a<span class="w"> </span>specific<span class="w"> </span>test.<span class="w"> </span>Can<span class="w"> </span>be<span class="w"> </span>provided
 <span class="w">                                  </span>multiple<span class="w"> </span>times.
 <span class="w">  </span>--ignore-status<span class="w">                 </span>Exit<span class="w"> </span>code<span class="w"> </span>will<span class="w"> </span>always<span class="w"> </span>be<span class="w"> </span><span class="m">0</span>.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
 <span class="w">                                  </span>ANTA_NRFU_IGNORE_STATUS<span class="o">]</span>
-<span class="w">  </span>--ignore-error<span class="w">                  </span>Exit<span class="w"> </span>code<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="k">if</span><span class="w"> </span>all<span class="w"> </span>tests<span class="w"> </span>succeeded
-<span class="w">                                  </span>or<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="k">if</span><span class="w"> </span>any<span class="w"> </span><span class="nb">test</span><span class="w"> </span>failed.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
-<span class="w">                                  </span>ANTA_NRFU_IGNORE_ERROR<span class="o">]</span>
+<span class="w">  </span>--ignore-error<span class="w">                  </span>Ignore<span class="w"> </span><span class="nb">test</span><span class="w"> </span>errors<span class="w"> </span>when<span class="w"> </span>determining<span class="w"> </span>the<span class="w"> </span><span class="nb">exit</span>
+<span class="w">                                  </span>code.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:<span class="w"> </span>ANTA_NRFU_IGNORE_ERROR<span class="o">]</span>
 <span class="w">  </span>--hide<span class="w"> </span><span class="o">[</span>success<span class="p">|</span>failure<span class="p">|</span>error<span class="p">|</span>skipped<span class="o">]</span>
 <span class="w">                                  </span>Hide<span class="w"> </span>results<span class="w"> </span>by<span class="w"> </span>type:<span class="w"> </span>success<span class="w"> </span>/<span class="w"> </span>failure<span class="w"> </span>/
-<span class="w">                                  </span>error<span class="w"> </span>/<span class="w"> </span>skipped<span class="err">&#39;</span>.
+<span class="w">                                  </span>error<span class="w"> </span>/<span class="w"> </span>skipped.
 <span class="w">  </span>--dry-run<span class="w">                       </span>Run<span class="w"> </span>anta<span class="w"> </span>nrfu<span class="w"> </span><span class="nb">command</span><span class="w"> </span>but<span class="w"> </span>stop<span class="w"> </span>before
 <span class="w">                                  </span>starting<span class="w"> </span>to<span class="w"> </span>execute<span class="w"> </span>the<span class="w"> </span>tests.<span class="w"> </span>Considers<span class="w"> </span>all
 <span class="w">                                  </span>devices<span class="w"> </span>as<span class="w"> </span>connected.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:
@@ -3611,9 +3990,9 @@ Options:
 <span class="w">  </span>--help<span class="w">        </span>Show<span class="w"> </span>this<span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span>exit.
 </code></pre></div>
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--device<span class="w"> </span>DC1-LEAF1A<span class="w"> </span>text
+<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--device<span class="w"> </span>dc1-leaf1a<span class="w"> </span>text
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta_nrfu_device_dc1leaf1a_text.svg"><img alt="anta nrfu text results" loading="lazy" src="../../imgs/anta_nrfu_device_dc1leaf1a_text.svg" width="1600" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_device_dc1leaf1a_text.svg"><img alt="anta nrfu text results" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_device_dc1leaf1a_text.svg" width="1600" /></a></p>
 <h3 id="performing-nrfu-with-table-rendering">Performing NRFU with table rendering<a class="headerlink" href="#performing-nrfu-with-table-rendering" title="Permanent link">&para;</a></h3>
 <p>The <code>table</code> command under the <code>anta nrfu</code> namespace offers a clear and organized table view of the test results, suitable for filtering. It also has its own set of options for better control over the output.</p>
 <h4 id="command-overview_1">Command overview<a class="headerlink" href="#command-overview_1" title="Permanent link">&para;</a></h4>
@@ -3630,25 +4009,25 @@ Options:
 <span class="w">                                  </span>shown.<span class="w">  </span><span class="o">[</span>env<span class="w"> </span>var:<span class="w"> </span>ANTA_NRFU_TABLE_EXPAND<span class="o">]</span>
 <span class="w">  </span>--help<span class="w">                          </span>Show<span class="w"> </span>this<span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span>exit.
 </code></pre></div>
-<p>The <code>--group-by</code> option show a summarized view of the test results per host or per test.</p>
+<p>The <code>--group-by</code> option shows a summarized view of the test results per host or per test.</p>
 <h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>LEAF<span class="w"> </span>table
+<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>leaf<span class="w"> </span>table
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta_nrfu_tags_LEAF_table.svg"><img alt="anta nrfu table results" loading="lazy" src="../../imgs/anta_nrfu_tags_LEAF_table.svg" width="1600" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_tags_leaf_table.svg"><img alt="anta nrfu table results" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_tags_leaf_table.svg" width="1600" /></a></p>
 <p>For larger setups, you can also group the results by host or test to get a summarized view:</p>
 <div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>table<span class="w"> </span>--group-by<span class="w"> </span>device
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta_nrfu_table_groupby_device.svg"><img alt="$1anta nrfu table group_by_host_output" loading="lazy" src="../../imgs/anta_nrfu_table_groupby_device.svg" width="1600" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_table_groupby_device.svg"><img alt="anta nrfu table grouped by device" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_table_groupby_device.svg" width="1600" /></a></p>
 <div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>table<span class="w"> </span>--group-by<span class="w"> </span><span class="nb">test</span>
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta_nrfu_table_groupby_test.svg"><img alt="$1anta nrfu table group_by_test_output" loading="lazy" src="../../imgs/anta_nrfu_table_groupby_test.svg" width="1600" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_table_groupby_test.svg"><img alt="anta nrfu table grouped by test" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_table_groupby_test.svg" width="1600" /></a></p>
 <p>To get more specific information, it is possible to filter on a single device or a single test:</p>
 <div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--device<span class="w"> </span>dc1-spine1<span class="w"> </span>table
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta_nrfu_device_dc1spine1_table.svg"><img alt="$1anta nrfu table filter_host_output" loading="lazy" src="../../imgs/anta_nrfu_device_dc1spine1_table.svg" width="1600" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_device_dc1spine1_table.svg"><img alt="anta nrfu table filtered by device" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_device_dc1spine1_table.svg" width="1600" /></a></p>
 <div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--test<span class="w"> </span>VerifyZeroTouch<span class="w"> </span>table
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta_nrfu_test_VerifyZeroTouch_table.svg"><img alt="$1anta nrfu table filter_test_output" loading="lazy" src="../../imgs/anta_nrfu_test_VerifyZeroTouch_table.svg" width="1600" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_test_VerifyZeroTouch_table.svg"><img alt="anta nrfu table filtered by test" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_test_VerifyZeroTouch_table.svg" width="1600" /></a></p>
 <h3 id="performing-nrfu-with-json-rendering">Performing NRFU with JSON rendering<a class="headerlink" href="#performing-nrfu-with-json-rendering" title="Permanent link">&para;</a></h3>
 <p>The JSON rendering command in NRFU testing will generate an output of all test results in JSON format.</p>
 <h4 id="command-overview_2">Command overview<a class="headerlink" href="#command-overview_2" title="Permanent link">&para;</a></h4>
@@ -3666,9 +4045,9 @@ Options:
 </code></pre></div>
 <p>The <code>--output</code> option allows you to save the JSON report as a file. If specified, no output will be displayed in the terminal. This is useful for further processing or integration with other tools.</p>
 <h4 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>LEAF<span class="w"> </span>json
+<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>leaf<span class="w"> </span>json
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta_nrfu_tags_LEAF_json.svg"><img alt="$1anta nrfu json results" loading="lazy" src="../../imgs/anta_nrfu_tags_LEAF_json.svg" width="1600" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_tags_leaf_json.svg"><img alt="anta nrfu json results" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_tags_leaf_json.svg" width="1600" /></a></p>
 <h3 id="performing-nrfu-and-saving-results-in-a-csv-file">Performing NRFU and saving results in a CSV file<a class="headerlink" href="#performing-nrfu-and-saving-results-in-a-csv-file" title="Permanent link">&para;</a></h3>
 <p>The <code>csv</code> command in NRFU testing is useful for generating a CSV file with all tests result. This file can be easily analyzed and filtered by operator for reporting purposes.</p>
 <h4 id="command-overview_3">Command overview<a class="headerlink" href="#command-overview_3" title="Permanent link">&para;</a></h4>
@@ -3683,7 +4062,9 @@ Options:
 <span class="w">  </span>--help<span class="w">             </span>Show<span class="w"> </span>this<span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span>exit.
 </code></pre></div>
 <h4 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h4>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta_nrfu_csv.png"><img alt="anta nrfu csv results" loading="lazy" src="../../imgs/anta_nrfu_csv.png" width="1600" /></a></p>
+<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>leaf<span class="w"> </span>csv<span class="w"> </span>--csv-output<span class="w"> </span>nrfu.csv
+</code></pre></div>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_tags_leaf_csv_csvoutput_nrfucsv.svg"><img alt="anta nrfu csv results" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_tags_leaf_csv_csvoutput_nrfucsv.svg" width="1600" /></a></p>
 <h3 id="performing-nrfu-and-saving-results-in-a-markdown-file">Performing NRFU and saving results in a Markdown file<a class="headerlink" href="#performing-nrfu-and-saving-results-in-a-markdown-file" title="Permanent link">&para;</a></h3>
 <p>The <code>md-report</code> command in NRFU testing generates a comprehensive Markdown report containing various sections, including detailed statistics for devices and test categories.</p>
 <h4 id="command-overview_4">Command overview<a class="headerlink" href="#command-overview_4" title="Permanent link">&para;</a></h4>
@@ -3700,7 +4081,9 @@ Options:
 <span class="w">  </span>--help<span class="w">            </span>Show<span class="w"> </span>this<span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span>exit.
 </code></pre></div>
 <h4 id="example_3">Example<a class="headerlink" href="#example_3" title="Permanent link">&para;</a></h4>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta-nrfu-md-report-output.png"><img alt="anta nrfu md-report results" loading="lazy" src="../../imgs/anta-nrfu-md-report-output.png" width="1600" /></a></p>
+<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>leaf<span class="w"> </span>md-report<span class="w"> </span>--md-output<span class="w"> </span>nrfu.md
+</code></pre></div>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_tags_leaf_mdreport_mdoutput_nrfumd.svg"><img alt="anta nrfu md-report results" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_tags_leaf_mdreport_mdoutput_nrfumd.svg" width="1600" /></a></p>
 <h3 id="performing-nrfu-with-custom-reports">Performing NRFU with custom reports<a class="headerlink" href="#performing-nrfu-with-custom-reports" title="Permanent link">&para;</a></h3>
 <p>ANTA offers a CLI option for creating custom reports. This leverages the Jinja2 template system, allowing you to tailor reports to your specific needs.</p>
 <h4 id="command-overview_5">Command overview<a class="headerlink" href="#command-overview_5" title="Permanent link">&para;</a></h4>
@@ -3719,28 +4102,29 @@ Options:
 <p>The <code>--template</code> option is used to specify the Jinja2 template file for generating the custom report.</p>
 <p>The <code>--output</code> option allows you to choose the path where the final report will be saved.</p>
 <h4 id="example_4">Example<a class="headerlink" href="#example_4" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>LEAF<span class="w"> </span>tpl-report<span class="w"> </span>--template<span class="w"> </span>./custom_template.j2
+<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>leaf<span class="w"> </span>tpl-report<span class="w"> </span>--template<span class="w"> </span>./custom_template.j2
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta-nrfu-tpl-report-output.png"><img alt="$1anta nrfu tpl_results" loading="lazy" src="../../imgs/anta-nrfu-tpl-report-output.png" width="1600" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_tags_leaf_tplreport_template__custom_templatej2.svg"><img alt="anta nrfu custom report results" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_tags_leaf_tplreport_template__custom_templatej2.svg" width="1600" /></a></p>
 <p>The template <code>./custom_template.j2</code> is a simple Jinja2 template:</p>
 <div class="highlight"><pre><span></span><code>{% for d in data %}
-* {{ d.test }} is [green]{{ d.result | upper}}[/green] for {{ d.name }}
+* {{ d.test }} is [{{ "green" if d.result == "success" else "red" }}]{{ d.result | upper }}[/] for {{ d.name }}
 {% endfor %}
 </code></pre></div>
-<p>The Jinja2 template has access to all <code>TestResult</code> elements and their values, as described in this <a href="../../api/result/#anta.result_manager.models.TestResult">documentation</a>.</p>
+<p>The Jinja2 template has access to all <code>TestResult</code> elements and their values, as described in this <a class="autorefs autorefs-internal" title="            TestResult" href="../../api/result/#anta.result_manager.models.TestResult">documentation</a>.</p>
 <p>You can also save the report result to a file using the <code>--output</code> option:</p>
-<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>LEAF<span class="w"> </span>tpl-report<span class="w"> </span>--template<span class="w"> </span>./custom_template.j2<span class="w"> </span>--output<span class="w"> </span>nrfu-tpl-report.txt
+<div class="highlight"><pre><span></span><code>anta<span class="w"> </span>nrfu<span class="w"> </span>--tags<span class="w"> </span>leaf<span class="w"> </span>tpl-report<span class="w"> </span>--template<span class="w"> </span>./custom_template.j2<span class="w"> </span>--output<span class="w"> </span>nrfu-tpl-report.txt
 </code></pre></div>
-<p>The resulting output might look like this:</p>
+<p>An excerpt of the resulting file might look like this:</p>
 <div class="highlight"><pre><span></span><code>cat<span class="w"> </span>nrfu-tpl-report.txt
-*<span class="w"> </span>VerifyMlagStatus<span class="w"> </span>is<span class="w"> </span><span class="o">[</span>green<span class="o">]</span>SUCCESS<span class="o">[</span>/green<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>DC1-LEAF1A
-*<span class="w"> </span>VerifyMlagInterfaces<span class="w"> </span>is<span class="w"> </span><span class="o">[</span>green<span class="o">]</span>SUCCESS<span class="o">[</span>/green<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>DC1-LEAF1A
-*<span class="w"> </span>VerifyMlagConfigSanity<span class="w"> </span>is<span class="w"> </span><span class="o">[</span>green<span class="o">]</span>SUCCESS<span class="o">[</span>/green<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>DC1-LEAF1A
-*<span class="w"> </span>VerifyMlagReloadDelay<span class="w"> </span>is<span class="w"> </span><span class="o">[</span>green<span class="o">]</span>SUCCESS<span class="o">[</span>/green<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>DC1-LEAF1A
+*<span class="w"> </span>VerifyMlagInterfaces<span class="w"> </span>is<span class="w"> </span><span class="o">[</span>red<span class="o">]</span>FAILURE<span class="o">[</span>/<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>dc1-leaf1a
+*<span class="w"> </span>VerifyEOSVersion<span class="w"> </span>is<span class="w"> </span><span class="o">[</span>green<span class="o">]</span>SUCCESS<span class="o">[</span>/<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>dc1-leaf1a
+*<span class="w"> </span>VerifyMlagConfigSanity<span class="w"> </span>is<span class="w"> </span><span class="o">[</span>green<span class="o">]</span>SUCCESS<span class="o">[</span>/<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>dc1-leaf1a
+*<span class="w"> </span>VerifyUptime<span class="w"> </span>is<span class="w"> </span><span class="o">[</span>green<span class="o">]</span>SUCCESS<span class="o">[</span>/<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>dc1-leaf1a
+...<span class="w"> </span><span class="m">44</span><span class="w"> </span>results<span class="w"> </span>omitted<span class="w"> </span>...
 </code></pre></div>
 <h3 id="dry-run-mode">Dry-run mode<a class="headerlink" href="#dry-run-mode" title="Permanent link">&para;</a></h3>
 <p>It is possible to run <code>anta nrfu --dry-run</code> to execute ANTA up to the point where it should communicate with the network to execute the tests. When using <code>--dry-run</code>, all inventory devices are assumed to be online. This can be useful to check how many tests would be run using the catalog and inventory.</p>
-<p><a class="glightbox" data-type="image" data-width="90vw" href="../../imgs/anta_nrfu___dry_run.svg"><img alt="$1anta nrfu dry_run" loading="lazy" src="../../imgs/anta_nrfu___dry_run.svg" width="1600" /></a></p>
+<p><a class="glightbox" data-type="image" href="../../imgs/anta_nrfu_dryrun.svg"><img alt="anta nrfu dry-run results" class="img_center" loading="lazy" src="../../imgs/anta_nrfu_dryrun.svg" width="1600" /></a></p>
 
   
 
@@ -3790,7 +4174,7 @@ Options:
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    June 26, 2026
+    October 22, 2026
   </span>
 
     
@@ -3852,7 +4236,7 @@ Options:
       
     
     <a href="https://github.com/aristanetworks/anta" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
     
@@ -3863,7 +4247,7 @@ Options:
       
     
     <a href="https://github.com/aristanetworks/anta/pkgs/container/anta" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
     </a>
   
     
@@ -3874,7 +4258,7 @@ Options:
       
     
     <a href="https://pypi.org/project/anta/" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
     </a>
   
 </div>
@@ -3884,7 +4268,7 @@ Options:
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -3892,14 +4276,22 @@ Options:
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"search":"../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"redirect":null,"search":"../../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ee611ef6.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3cb411a8.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+        <script src="../../stylesheets/mermaid-zoom.js"></script>
+      
+        <script src="../../stylesheets/glightbox-zoom.js"></script>
       
     
   </body>

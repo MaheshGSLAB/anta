@@ -12,7 +12,8 @@
         <meta name="author" content="Khelil Sator">
       
       
-        <link rel="canonical" href="https://anta.arista.com/main/api/tests/mlag/">
+        <link rel="canonical" href="https://anta.arista.com/stable/api/tests/mlag/">
+      
       
       
         <link rel="prev" href="../logging/">
@@ -25,7 +26,7 @@
       
       
       <link rel="icon" href="../../../imgs/favicon.ico">
-      <meta name="generator" content="zensical-0.0.46">
+      <meta name="generator" content="zensical-0.1.1">
     
     
       
@@ -36,12 +37,12 @@
       
         
       
-      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.19d3147f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.ebb7f775.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.b60ce83d.min.css">
       
       
 
@@ -83,14 +84,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#anta.tests.mlag.VerifyMlagConfigSanity" class="md-skip">
-          Skip to content
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -103,14 +101,14 @@
               
   <span id="current-version">
     
-      This is the documentation from the 'main' branch which is not a stable release.
+      You're not viewing the latest version.
     
     <a href="../../../../stable/api/tests/mlag/"><strong>Click here to go to latest stable release.</strong></a>
   </span>
   
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../..",location),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -125,12 +123,13 @@
     <a href="../../.." title="Arista Network Test Automation - ANTA" class="md-header__button md-logo" aria-label="Arista Network Test Automation - ANTA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+    <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+      <span class="md-visually-hidden">Navigation</span>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -182,9 +181,10 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+        <label class="md-header__button md-icon" for="__search">
           
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+          <span class="md-visually-hidden">Search</span>
         </label>
         <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
   <button type="button" class="md-search__button">
@@ -198,7 +198,7 @@
         <a href="https://github.com/aristanetworks/anta" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
   </div>
   <div class="md-source__repository">
     ANTA on Github
@@ -236,7 +236,7 @@
     <a href="../../.." title="Arista Network Test Automation - ANTA" class="md-nav__button md-logo" aria-label="Arista Network Test Automation - ANTA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
 
     </a>
     Arista Network Test Automation - ANTA
@@ -246,7 +246,7 @@
       <a href="https://github.com/aristanetworks/anta" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
   </div>
   <div class="md-source__repository">
     ANTA on Github
@@ -417,18 +417,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   ANTA CLI
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -452,10 +453,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -479,10 +480,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -506,10 +507,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -533,10 +534,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -560,10 +561,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -587,10 +588,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -614,10 +615,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -641,10 +642,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -668,10 +669,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -695,10 +696,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -714,9 +716,7 @@
     
       
         
-      
-        
-      
+          
         
       
         
@@ -732,48 +732,58 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../reports/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
     
   
-  Advanced Usages
+  Reports
 
     
   </span>
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Advanced Usages
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+            </a>
             
               
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Reports
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
                 
+              
+                
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced_usages/caching/" class="md-nav__link">
+      <a href="../../../reports/anta/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Caching in ANTA
+  ANTA Test Reports
 
     
   </span>
@@ -784,91 +794,11 @@
     </li>
   
 
-              
-            
-              
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../advanced_usages/custom-tests/" class="md-nav__link">
+              
+            </ul>
+          </nav>
         
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Developing ANTA tests
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../advanced_usages/as-python-lib/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  ANTA as a Python Library
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../advanced_usages/env-vars/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Environment Variables
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -973,18 +903,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1008,10 +939,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1035,10 +966,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1062,10 +993,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1089,10 +1020,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1116,10 +1047,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1143,10 +1074,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1170,10 +1101,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1197,10 +1128,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1224,10 +1155,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1251,10 +1182,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1278,10 +1209,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1305,10 +1236,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1332,10 +1263,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1359,10 +1290,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1386,10 +1317,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -1588,10 +1519,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1615,10 +1546,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1642,10 +1573,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1669,10 +1600,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1696,10 +1627,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1743,18 +1674,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_21">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7_21">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Routing
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1778,10 +1710,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1805,10 +1737,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1832,10 +1764,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1859,18 +1791,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1894,10 +1827,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1921,10 +1854,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1948,10 +1881,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1975,10 +1908,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2002,10 +1935,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2029,10 +1962,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2056,10 +1989,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2083,10 +2016,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2110,10 +2043,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2127,18 +2061,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -2166,6 +2088,450 @@
   <span class="md-ellipsis">
     
   
+  Security Advisory
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Security Advisory
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Usage
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Report formats and results
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tests
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Tests
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/tests-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tests
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/lab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Test in the lab
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Advanced Usages
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Advanced Usages
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced_usages/caching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Caching in ANTA
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced_usages/custom-tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Developing ANTA tests
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced_usages/as-python-lib/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ANTA as a Python Library
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced_usages/env-vars/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Environment Variables
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
   API Documentation
 
     
@@ -2176,18 +2542,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   API Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2211,10 +2578,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2238,10 +2605,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2265,10 +2632,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2292,10 +2659,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2319,10 +2686,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2344,10 +2711,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_6" >
         
           
-          <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_6" id="__nav_10_6_label" tabindex="0">
             
   
   
@@ -2364,18 +2731,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_6">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2399,10 +2767,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2426,10 +2794,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2453,18 +2821,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2488,10 +2857,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2515,17 +2884,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_8" >
         
           
-          <label class="md-nav__link" for="__nav_8_8" id="__nav_8_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_8" id="__nav_10_8_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-  Reporters
+  Reporter API
 
     
   </span>
@@ -2535,18 +2904,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_8">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-  Reporters
+  Reporter API
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2570,10 +2940,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2597,10 +2967,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2624,10 +2994,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2651,18 +3021,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2686,10 +3057,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2713,10 +3084,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3099,13 +3471,15 @@
 
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
+
   
   
 
 
-  <h1 id="__skip">ANTA Tests for MLAG</h1>
+  <h1>MLAG</h1>
 
 <!--
   ~ Copyright (c) 2023-2026 Arista Networks, Inc.
@@ -3121,8 +3495,6 @@
 
 
     <div class="doc doc-contents first">
-
-        <p>Module related to Multi-chassis Link Aggregation (MLAG) tests.</p>
 
 
 
@@ -3188,6 +3560,7 @@
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -3203,7 +3576,7 @@
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/mlag.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">102</span>
 <span class="normal">103</span>
@@ -3244,14 +3617,14 @@
 <span class="normal">138</span>
 <span class="normal">139</span>
 <span class="normal">140</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">VerifyMlagConfigSanity</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Verifies there are no MLAG config-sanity inconsistencies.</span>
+<span class="w">    </span><span class="sd">"""Verifies there are no MLAG config-sanity inconsistencies.</span>
 
 <span class="sd">    Expected Results</span>
 <span class="sd">    ----------------</span>
 <span class="sd">    * Success: The test will pass if there are NO MLAG config-sanity inconsistencies.</span>
 <span class="sd">    * Failure: The test will fail if there are MLAG config-sanity inconsistencies.</span>
-<span class="sd">    * Skipped: The test will be skipped if MLAG is &#39;disabled&#39;.</span>
-<span class="sd">    * Error: The test will give an error if &#39;mlagActive&#39; is not found in the JSON response.</span>
+<span class="sd">    * Skipped: The test will be skipped if MLAG is 'disabled'.</span>
+<span class="sd">    * Error: The test will give an error if 'mlagActive' is not found in the JSON response.</span>
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
@@ -3259,29 +3632,29 @@
 <span class="sd">    anta.tests.mlag:</span>
 <span class="sd">      - VerifyMlagConfigSanity:</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mlag&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show mlag config-sanity&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mlag"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show mlag config-sanity"</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyMlagConfigSanity.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyMlagConfigSanity."""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
         <span class="n">command_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json_output</span>
 
         <span class="c1"># Skipping the test if MLAG is disabled</span>
-        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;mlagActive&quot;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">&quot;MLAG is disabled&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"mlagActive"</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">"MLAG is disabled"</span><span class="p">)</span>
             <span class="k">return</span>
 
         <span class="c1"># Verifies the globalConfiguration config-sanity</span>
-        <span class="k">if</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;globalConfiguration&quot;</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">&quot;MLAG config-sanity found in global configuration&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"globalConfiguration"</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">"MLAG config-sanity found in global configuration"</span><span class="p">)</span>
 
         <span class="c1"># Verifies the interfaceConfiguration config-sanity</span>
-        <span class="k">if</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;interfaceConfiguration&quot;</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">&quot;MLAG config-sanity found in interface configuration&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"interfaceConfiguration"</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">"MLAG config-sanity found in interface configuration"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -3336,6 +3709,7 @@
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -3361,12 +3735,12 @@
               <tr>
                 <td><code>detection_delay</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;PositiveInteger&lt;/span&gt;
+                      <code><a class="autorefs autorefs-internal" title="            PositiveInteger
 
 
-  &lt;span class=&quot;doc doc-labels&quot;&gt;
-      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
-  &lt;/span&gt;" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
+  
+      module-attribute
+   (anta.custom_types.PositiveInteger)" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -3380,7 +3754,7 @@
               <tr>
                 <td><code>errdisabled</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -3394,12 +3768,12 @@
               <tr>
                 <td><code>recovery_delay</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;PositiveInteger&lt;/span&gt;
+                      <code><a class="autorefs autorefs-internal" title="            PositiveInteger
 
 
-  &lt;span class=&quot;doc doc-labels&quot;&gt;
-      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
-  &lt;/span&gt;" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
+  
+      module-attribute
+   (anta.custom_types.PositiveInteger)" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -3413,12 +3787,12 @@
               <tr>
                 <td><code>recovery_delay_non_mlag</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;PositiveInteger&lt;/span&gt;
+                      <code><a class="autorefs autorefs-internal" title="            PositiveInteger
 
 
-  &lt;span class=&quot;doc doc-labels&quot;&gt;
-      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
-  &lt;/span&gt;" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
+  
+      module-attribute
+   (anta.custom_types.PositiveInteger)" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -3438,7 +3812,7 @@
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/mlag.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">193</span>
 <span class="normal">194</span>
@@ -3511,13 +3885,13 @@
 <span class="normal">261</span>
 <span class="normal">262</span>
 <span class="normal">263</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">VerifyMlagDualPrimary</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Verifies the dual-primary detection and its parameters of the MLAG configuration.</span>
+<span class="w">    </span><span class="sd">"""Verifies the dual-primary detection and its parameters of the MLAG configuration.</span>
 
 <span class="sd">    Expected Results</span>
 <span class="sd">    ----------------</span>
 <span class="sd">    * Success: The test will pass if the dual-primary detection is enabled and its parameters are configured properly.</span>
 <span class="sd">    * Failure: The test will fail if the dual-primary detection is NOT enabled or its parameters are NOT configured properly.</span>
-<span class="sd">    * Skipped: The test will be skipped if MLAG is &#39;disabled&#39;.</span>
+<span class="sd">    * Skipped: The test will be skipped if MLAG is 'disabled'.</span>
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
@@ -3529,57 +3903,57 @@
 <span class="sd">          recovery_delay: 60</span>
 <span class="sd">          recovery_delay_non_mlag: 0</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Verifies the MLAG dual-primary detection parameters.&quot;</span>
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mlag&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show mlag detail&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="s2">"Verifies the MLAG dual-primary detection parameters."</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mlag"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show mlag detail"</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
 
     <span class="k">class</span><span class="w"> </span><span class="nc">Input</span><span class="p">(</span><span class="n">AntaTest</span><span class="o">.</span><span class="n">Input</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Input model for the VerifyMlagDualPrimary test.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Input model for the VerifyMlagDualPrimary test."""</span>
 
         <span class="n">detection_delay</span><span class="p">:</span> <span class="n">PositiveInteger</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Delay detection (seconds).&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Delay detection (seconds)."""</span>
         <span class="n">errdisabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Errdisabled all interfaces when dual-primary is detected.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Errdisabled all interfaces when dual-primary is detected."""</span>
         <span class="n">recovery_delay</span><span class="p">:</span> <span class="n">PositiveInteger</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Delay (seconds) after dual-primary detection resolves until non peer-link ports that are part of an MLAG are enabled.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Delay (seconds) after dual-primary detection resolves until non peer-link ports that are part of an MLAG are enabled."""</span>
         <span class="n">recovery_delay_non_mlag</span><span class="p">:</span> <span class="n">PositiveInteger</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Delay (seconds) after dual-primary detection resolves until ports that are not part of an MLAG are enabled.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Delay (seconds) after dual-primary detection resolves until ports that are not part of an MLAG are enabled."""</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyMlagDualPrimary.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyMlagDualPrimary."""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
-        <span class="n">errdisabled_action</span> <span class="o">=</span> <span class="s2">&quot;errdisableAllInterfaces&quot;</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">errdisabled</span> <span class="k">else</span> <span class="s2">&quot;none&quot;</span>
+        <span class="n">errdisabled_action</span> <span class="o">=</span> <span class="s2">"errdisableAllInterfaces"</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">errdisabled</span> <span class="k">else</span> <span class="s2">"none"</span>
         <span class="n">command_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json_output</span>
 
         <span class="c1"># Skipping the test if MLAG is disabled</span>
-        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;disabled&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">&quot;MLAG is disabled&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"state"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"disabled"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">"MLAG is disabled"</span><span class="p">)</span>
             <span class="k">return</span>
 
         <span class="c1"># Verifies the dualPrimaryDetectionState</span>
-        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;dualPrimaryDetectionState&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;disabled&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">&quot;Dual-primary detection is disabled&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"dualPrimaryDetectionState"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"disabled"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">"Dual-primary detection is disabled"</span><span class="p">)</span>
             <span class="k">return</span>
 
         <span class="c1"># Verifies the dualPrimaryAction</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">primary_action</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;detail.dualPrimaryAction&quot;</span><span class="p">))</span> <span class="o">!=</span> <span class="n">errdisabled_action</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dual-primary action mismatch - Expected: </span><span class="si">{</span><span class="n">errdisabled_action</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">primary_action</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">primary_action</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"detail.dualPrimaryAction"</span><span class="p">))</span> <span class="o">!=</span> <span class="n">errdisabled_action</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Dual-primary action mismatch - Expected: </span><span class="si">{</span><span class="n">errdisabled_action</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">primary_action</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
         <span class="c1"># Verifies the dualPrimaryDetectionDelay</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">detection_delay</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;detail.dualPrimaryDetectionDelay&quot;</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">detection_delay</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dual-primary detection delay mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">detection_delay</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">detection_delay</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">detection_delay</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"detail.dualPrimaryDetectionDelay"</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">detection_delay</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Dual-primary detection delay mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">detection_delay</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">detection_delay</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
         <span class="c1"># Verifies the dualPrimaryMlagRecoveryDelay</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">recovery_delay</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;dualPrimaryMlagRecoveryDelay&quot;</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">recovery_delay</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dual-primary MLAG recovery delay mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">recovery_delay</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">recovery_delay</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">recovery_delay</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"dualPrimaryMlagRecoveryDelay"</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">recovery_delay</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Dual-primary MLAG recovery delay mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">recovery_delay</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">recovery_delay</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
         <span class="c1"># Verifies the dualPrimaryNonMlagRecoveryDelay</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">recovery_delay_non_mlag</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;dualPrimaryNonMlagRecoveryDelay&quot;</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">recovery_delay_non_mlag</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">recovery_delay_non_mlag</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"dualPrimaryNonMlagRecoveryDelay"</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">recovery_delay_non_mlag</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span>
-                <span class="sa">f</span><span class="s2">&quot;Dual-primary non MLAG recovery delay mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">recovery_delay_non_mlag</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">recovery_delay_non_mlag</span><span class="si">}</span><span class="s2">&quot;</span>
+                <span class="sa">f</span><span class="s2">"Dual-primary non MLAG recovery delay mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">recovery_delay_non_mlag</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">recovery_delay_non_mlag</span><span class="si">}</span><span class="s2">"</span>
             <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
   </details>
@@ -3631,6 +4005,7 @@
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -3646,7 +4021,7 @@
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/mlag.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">64</span>
 <span class="normal">65</span>
@@ -3684,13 +4059,13 @@
 <span class="normal">97</span>
 <span class="normal">98</span>
 <span class="normal">99</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">VerifyMlagInterfaces</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Verifies there are no inactive or active-partial MLAG ports.</span>
+<span class="w">    </span><span class="sd">"""Verifies there are no inactive or active-partial MLAG ports.</span>
 
 <span class="sd">    Expected Results</span>
 <span class="sd">    ----------------</span>
 <span class="sd">    * Success: The test will pass if there are NO inactive or active-partial MLAG ports.</span>
 <span class="sd">    * Failure: The test will fail if there are inactive or active-partial MLAG ports.</span>
-<span class="sd">    * Skipped: The test will be skipped if MLAG is &#39;disabled&#39;.</span>
+<span class="sd">    * Skipped: The test will be skipped if MLAG is 'disabled'.</span>
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
@@ -3698,27 +4073,27 @@
 <span class="sd">    anta.tests.mlag:</span>
 <span class="sd">      - VerifyMlagInterfaces:</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mlag&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show mlag&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mlag"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show mlag"</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyMlagInterfaces.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyMlagInterfaces."""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
         <span class="n">command_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json_output</span>
 
         <span class="c1"># Skipping the test if MLAG is disabled</span>
-        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;disabled&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">&quot;MLAG is disabled&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"state"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"disabled"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">"MLAG is disabled"</span><span class="p">)</span>
             <span class="k">return</span>
 
         <span class="c1"># Verifies the Inactive and Active-partial ports</span>
-        <span class="n">inactive_ports</span> <span class="o">=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;mlagPorts&quot;</span><span class="p">][</span><span class="s2">&quot;Inactive&quot;</span><span class="p">]</span>
-        <span class="n">partial_active_ports</span> <span class="o">=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;mlagPorts&quot;</span><span class="p">][</span><span class="s2">&quot;Active-partial&quot;</span><span class="p">]</span>
+        <span class="n">inactive_ports</span> <span class="o">=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"mlagPorts"</span><span class="p">][</span><span class="s2">"Inactive"</span><span class="p">]</span>
+        <span class="n">partial_active_ports</span> <span class="o">=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"mlagPorts"</span><span class="p">][</span><span class="s2">"Active-partial"</span><span class="p">]</span>
         <span class="k">if</span> <span class="n">inactive_ports</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">partial_active_ports</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MLAG status is not ok - Inactive Ports: </span><span class="si">{</span><span class="n">inactive_ports</span><span class="si">}</span><span class="s2"> Partial Active Ports: </span><span class="si">{</span><span class="n">partial_active_ports</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"MLAG status is not ok - Inactive Ports: </span><span class="si">{</span><span class="n">inactive_ports</span><span class="si">}</span><span class="s2"> Partial Active Ports: </span><span class="si">{</span><span class="n">partial_active_ports</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -3770,6 +4145,7 @@
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -3795,12 +4171,12 @@
               <tr>
                 <td><code>primary_priority</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;MlagPriority&lt;/span&gt;
+                      <code><a class="autorefs autorefs-internal" title="            MlagPriority
 
 
-  &lt;span class=&quot;doc doc-labels&quot;&gt;
-      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
-  &lt;/span&gt;" href="../types/#anta.custom_types.MlagPriority">MlagPriority</a></code>
+  
+      module-attribute
+   (anta.custom_types.MlagPriority)" href="../types/#anta.custom_types.MlagPriority">MlagPriority</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -3820,7 +4196,7 @@
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/mlag.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">266</span>
 <span class="normal">267</span>
@@ -3870,13 +4246,13 @@
 <span class="normal">311</span>
 <span class="normal">312</span>
 <span class="normal">313</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">VerifyMlagPrimaryPriority</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Verify the MLAG (Multi-Chassis Link Aggregation) primary priority.</span>
+<span class="w">    </span><span class="sd">"""Verify the MLAG (Multi-Chassis Link Aggregation) primary priority.</span>
 
 <span class="sd">    Expected Results</span>
 <span class="sd">    ----------------</span>
-<span class="sd">    * Success: The test will pass if the MLAG state is set as &#39;primary&#39; and the priority matches the input.</span>
-<span class="sd">    * Failure: The test will fail if the MLAG state is not &#39;primary&#39; or the priority doesn&#39;t match the input.</span>
-<span class="sd">    * Skipped: The test will be skipped if MLAG is &#39;disabled&#39;.</span>
+<span class="sd">    * Success: The test will pass if the MLAG state is set as 'primary' and the priority matches the input.</span>
+<span class="sd">    * Failure: The test will fail if the MLAG state is not 'primary' or the priority doesn't match the input.</span>
+<span class="sd">    * Skipped: The test will be skipped if MLAG is 'disabled'.</span>
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
@@ -3885,38 +4261,38 @@
 <span class="sd">      - VerifyMlagPrimaryPriority:</span>
 <span class="sd">          primary_priority: 3276</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Verifies the configuration of the MLAG primary priority.&quot;</span>
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mlag&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show mlag detail&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="s2">"Verifies the configuration of the MLAG primary priority."</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mlag"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show mlag detail"</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
 
     <span class="k">class</span><span class="w"> </span><span class="nc">Input</span><span class="p">(</span><span class="n">AntaTest</span><span class="o">.</span><span class="n">Input</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Input model for the VerifyMlagPrimaryPriority test.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Input model for the VerifyMlagPrimaryPriority test."""</span>
 
         <span class="n">primary_priority</span><span class="p">:</span> <span class="n">MlagPriority</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;The expected MLAG primary priority.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""The expected MLAG primary priority."""</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyMlagPrimaryPriority.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyMlagPrimaryPriority."""</span>
         <span class="n">command_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json_output</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
         <span class="c1"># Skip the test if MLAG is disabled</span>
-        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;disabled&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">&quot;MLAG is disabled&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"state"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"disabled"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">"MLAG is disabled"</span><span class="p">)</span>
             <span class="k">return</span>
 
-        <span class="n">mlag_state</span> <span class="o">=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;detail.mlagState&quot;</span><span class="p">)</span>
-        <span class="n">primary_priority</span> <span class="o">=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;detail.primaryPriority&quot;</span><span class="p">)</span>
+        <span class="n">mlag_state</span> <span class="o">=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"detail.mlagState"</span><span class="p">)</span>
+        <span class="n">primary_priority</span> <span class="o">=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"detail.primaryPriority"</span><span class="p">)</span>
 
         <span class="c1"># Check MLAG state</span>
-        <span class="k">if</span> <span class="n">mlag_state</span> <span class="o">!=</span> <span class="s2">&quot;primary&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">&quot;The device is not set as MLAG primary&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">mlag_state</span> <span class="o">!=</span> <span class="s2">"primary"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">"The device is not set as MLAG primary"</span><span class="p">)</span>
 
         <span class="c1"># Check primary priority</span>
         <span class="k">if</span> <span class="n">primary_priority</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">primary_priority</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MLAG primary priority mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">primary_priority</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">primary_priority</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"MLAG primary priority mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">primary_priority</span><span class="si">}</span><span class="s2"> Actual: </span><span class="si">{</span><span class="n">primary_priority</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -3969,6 +4345,7 @@
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -3994,12 +4371,12 @@
               <tr>
                 <td><code>reload_delay</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;PositiveInteger&lt;/span&gt;
+                      <code><a class="autorefs autorefs-internal" title="            PositiveInteger
 
 
-  &lt;span class=&quot;doc doc-labels&quot;&gt;
-      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
-  &lt;/span&gt;" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
+  
+      module-attribute
+   (anta.custom_types.PositiveInteger)" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4013,12 +4390,12 @@
               <tr>
                 <td><code>reload_delay_non_mlag</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;PositiveInteger&lt;/span&gt;
+                      <code><a class="autorefs autorefs-internal" title="            PositiveInteger
 
 
-  &lt;span class=&quot;doc doc-labels&quot;&gt;
-      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
-  &lt;/span&gt;" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
+  
+      module-attribute
+   (anta.custom_types.PositiveInteger)" href="../types/#anta.custom_types.PositiveInteger">PositiveInteger</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4038,7 +4415,7 @@
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/mlag.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">143</span>
 <span class="normal">144</span>
@@ -4088,13 +4465,13 @@
 <span class="normal">188</span>
 <span class="normal">189</span>
 <span class="normal">190</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">VerifyMlagReloadDelay</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Verifies the reload-delay parameters of the MLAG configuration.</span>
+<span class="w">    </span><span class="sd">"""Verifies the reload-delay parameters of the MLAG configuration.</span>
 
 <span class="sd">    Expected Results</span>
 <span class="sd">    ----------------</span>
 <span class="sd">    * Success: The test will pass if the reload-delay parameters are configured properly.</span>
 <span class="sd">    * Failure: The test will fail if the reload-delay parameters are NOT configured properly.</span>
-<span class="sd">    * Skipped: The test will be skipped if MLAG is &#39;disabled&#39;.</span>
+<span class="sd">    * Skipped: The test will be skipped if MLAG is 'disabled'.</span>
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
@@ -4104,37 +4481,37 @@
 <span class="sd">          reload_delay: 300</span>
 <span class="sd">          reload_delay_non_mlag: 330</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mlag&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show mlag&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mlag"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show mlag"</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
 
     <span class="k">class</span><span class="w"> </span><span class="nc">Input</span><span class="p">(</span><span class="n">AntaTest</span><span class="o">.</span><span class="n">Input</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Input model for the VerifyMlagReloadDelay test.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Input model for the VerifyMlagReloadDelay test."""</span>
 
         <span class="n">reload_delay</span><span class="p">:</span> <span class="n">PositiveInteger</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Delay (seconds) after reboot until non peer-link ports that are part of an MLAG are enabled.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Delay (seconds) after reboot until non peer-link ports that are part of an MLAG are enabled."""</span>
         <span class="n">reload_delay_non_mlag</span><span class="p">:</span> <span class="n">PositiveInteger</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Delay (seconds) after reboot until ports that are not part of an MLAG are enabled.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Delay (seconds) after reboot until ports that are not part of an MLAG are enabled."""</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyMlagReloadDelay.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyMlagReloadDelay."""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
         <span class="n">command_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json_output</span>
 
         <span class="c1"># Skipping the test if MLAG is disabled</span>
-        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;disabled&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">&quot;MLAG is disabled&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"state"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"disabled"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">"MLAG is disabled"</span><span class="p">)</span>
             <span class="k">return</span>
 
         <span class="c1"># Verifies the reloadDelay</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">reload_delay</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;reloadDelay&quot;</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">reload_delay</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MLAG reload-delay mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">reload_delay</span><span class="si">}</span><span class="s2">s Actual: </span><span class="si">{</span><span class="n">reload_delay</span><span class="si">}</span><span class="s2">s&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">reload_delay</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"reloadDelay"</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">reload_delay</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"MLAG reload-delay mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">reload_delay</span><span class="si">}</span><span class="s2">s Actual: </span><span class="si">{</span><span class="n">reload_delay</span><span class="si">}</span><span class="s2">s"</span><span class="p">)</span>
 
         <span class="c1"># Verifies the reloadDelayNonMlag</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">non_mlag_reload_delay</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">&quot;reloadDelayNonMlag&quot;</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">reload_delay_non_mlag</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Delay for non-MLAG ports mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">reload_delay_non_mlag</span><span class="si">}</span><span class="s2">s Actual: </span><span class="si">{</span><span class="n">non_mlag_reload_delay</span><span class="si">}</span><span class="s2">s&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">non_mlag_reload_delay</span> <span class="o">:=</span> <span class="n">get_value</span><span class="p">(</span><span class="n">command_output</span><span class="p">,</span> <span class="s2">"reloadDelayNonMlag"</span><span class="p">))</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">reload_delay_non_mlag</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Delay for non-MLAG ports mismatch - Expected: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">reload_delay_non_mlag</span><span class="si">}</span><span class="s2">s Actual: </span><span class="si">{</span><span class="n">non_mlag_reload_delay</span><span class="si">}</span><span class="s2">s"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -4185,6 +4562,7 @@
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -4200,7 +4578,7 @@
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/mlag.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
 <span class="normal">21</span>
@@ -4244,13 +4622,13 @@
 <span class="normal">59</span>
 <span class="normal">60</span>
 <span class="normal">61</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">VerifyMlagStatus</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Verifies the health status of the MLAG configuration.</span>
+<span class="w">    </span><span class="sd">"""Verifies the health status of the MLAG configuration.</span>
 
 <span class="sd">    Expected Results</span>
 <span class="sd">    ----------------</span>
-<span class="sd">    * Success: The test will pass if the MLAG state is &#39;active&#39;, negotiation status is &#39;connected&#39;, peer-link status and local interface status are &#39;up&#39;.</span>
-<span class="sd">    * Failure: The test will fail if the MLAG state is not &#39;active&#39;, negotiation status is not &#39;connected&#39;, peer-link status or local interface status are not &#39;up&#39;.</span>
-<span class="sd">    * Skipped: The test will be skipped if MLAG is &#39;disabled&#39;.</span>
+<span class="sd">    * Success: The test will pass if the MLAG state is 'active', negotiation status is 'connected', peer-link status and local interface status are 'up'.</span>
+<span class="sd">    * Failure: The test will fail if the MLAG state is not 'active', negotiation status is not 'connected', peer-link status or local interface status are not 'up'.</span>
+<span class="sd">    * Skipped: The test will be skipped if MLAG is 'disabled'.</span>
 
 <span class="sd">    Examples</span>
 <span class="sd">    --------</span>
@@ -4258,33 +4636,33 @@
 <span class="sd">    anta.tests.mlag:</span>
 <span class="sd">      - VerifyMlagStatus:</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mlag&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show mlag&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mlag"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show mlag"</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">2</span><span class="p">)]</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyMlagStatus.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyMlagStatus."""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
         <span class="n">command_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json_output</span>
 
         <span class="c1"># Skipping the test if MLAG is disabled</span>
-        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;disabled&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">&quot;MLAG is disabled&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"state"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"disabled"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_skipped</span><span class="p">(</span><span class="s2">"MLAG is disabled"</span><span class="p">)</span>
             <span class="k">return</span>
 
         <span class="c1"># Verifies the negotiation status</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">neg_status</span> <span class="o">:=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;negStatus&quot;</span><span class="p">])</span> <span class="o">!=</span> <span class="s2">&quot;connected&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MLAG negotiation status mismatch - Expected: connected Actual: </span><span class="si">{</span><span class="n">neg_status</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">neg_status</span> <span class="o">:=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"negStatus"</span><span class="p">])</span> <span class="o">!=</span> <span class="s2">"connected"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"MLAG negotiation status mismatch - Expected: connected Actual: </span><span class="si">{</span><span class="n">neg_status</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
         <span class="c1"># Verifies the local interface interface status</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">intf_state</span> <span class="o">:=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;localIntfStatus&quot;</span><span class="p">])</span> <span class="o">!=</span> <span class="s2">&quot;up&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Operational state of the MLAG local interface is not correct - Expected: up Actual: </span><span class="si">{</span><span class="n">intf_state</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">intf_state</span> <span class="o">:=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"localIntfStatus"</span><span class="p">])</span> <span class="o">!=</span> <span class="s2">"up"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Operational state of the MLAG local interface is not correct - Expected: up Actual: </span><span class="si">{</span><span class="n">intf_state</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
         <span class="c1"># Verifies the peerLinkStatus</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">peer_link_state</span> <span class="o">:=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;peerLinkStatus&quot;</span><span class="p">])</span> <span class="o">!=</span> <span class="s2">&quot;up&quot;</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Operational state of the MLAG peer link is not correct - Expected: up Actual: </span><span class="si">{</span><span class="n">peer_link_state</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">peer_link_state</span> <span class="o">:=</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"peerLinkStatus"</span><span class="p">])</span> <span class="o">!=</span> <span class="s2">"up"</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Operational state of the MLAG peer link is not correct - Expected: up Actual: </span><span class="si">{</span><span class="n">peer_link_state</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -4403,7 +4781,7 @@
       
     
     <a href="https://github.com/aristanetworks/anta" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
     
@@ -4414,7 +4792,7 @@
       
     
     <a href="https://github.com/aristanetworks/anta/pkgs/container/anta" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
     </a>
   
     
@@ -4425,7 +4803,7 @@
       
     
     <a href="https://pypi.org/project/anta/" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
     </a>
   
 </div>
@@ -4435,7 +4813,7 @@
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -4443,14 +4821,22 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"search":"../../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"redirect":null,"search":"../../../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ee611ef6.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.3cb411a8.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+        <script src="../../../stylesheets/mermaid-zoom.js"></script>
+      
+        <script src="../../../stylesheets/glightbox-zoom.js"></script>
       
     
   </body>

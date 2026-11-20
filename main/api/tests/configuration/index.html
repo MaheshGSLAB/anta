@@ -12,7 +12,8 @@
         <meta name="author" content="Khelil Sator">
       
       
-        <link rel="canonical" href="https://anta.arista.com/main/api/tests/configuration/">
+        <link rel="canonical" href="https://anta.arista.com/stable/api/tests/configuration/">
+      
       
       
         <link rel="prev" href="../bfd/">
@@ -25,7 +26,7 @@
       
       
       <link rel="icon" href="../../../imgs/favicon.ico">
-      <meta name="generator" content="zensical-0.0.46">
+      <meta name="generator" content="zensical-0.1.1">
     
     
       
@@ -36,12 +37,12 @@
       
         
       
-      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.19d3147f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.ebb7f775.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.b60ce83d.min.css">
       
       
 
@@ -83,14 +84,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#tests" class="md-skip">
-          Skip to content
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Skip to content
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -103,14 +101,14 @@
               
   <span id="current-version">
     
-      This is the documentation from the 'main' branch which is not a stable release.
+      You're not viewing the latest version.
     
     <a href="../../../../stable/api/tests/configuration/"><strong>Click here to go to latest stable release.</strong></a>
   </span>
   
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../..",location),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -125,12 +123,13 @@
     <a href="../../.." title="Arista Network Test Automation - ANTA" class="md-header__button md-logo" aria-label="Arista Network Test Automation - ANTA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+    <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+      <span class="md-visually-hidden">Navigation</span>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -182,9 +181,10 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+        <label class="md-header__button md-icon" for="__search">
           
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+          <span class="md-visually-hidden">Search</span>
         </label>
         <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
   <button type="button" class="md-search__button">
@@ -198,7 +198,7 @@
         <a href="https://github.com/aristanetworks/anta" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
   </div>
   <div class="md-source__repository">
     ANTA on Github
@@ -236,7 +236,7 @@
     <a href="../../.." title="Arista Network Test Automation - ANTA" class="md-nav__button md-logo" aria-label="Arista Network Test Automation - ANTA" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M248 88h80v48h-80zm-8-56c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h16v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h192v32h-16c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48v-64c0-26.5-21.5-48-48-48h-16v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H320v-32h16c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm208 344h8v48h-80v-48zm-256 0h8v48h-80v-48z"/></svg>
 
     </a>
     Arista Network Test Automation - ANTA
@@ -246,7 +246,7 @@
       <a href="https://github.com/aristanetworks/anta" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
   </div>
   <div class="md-source__repository">
     ANTA on Github
@@ -417,18 +417,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   ANTA CLI
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -452,10 +453,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -479,10 +480,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -506,10 +507,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -533,10 +534,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -560,10 +561,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -587,10 +588,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -614,10 +615,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -641,10 +642,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -668,10 +669,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -695,10 +696,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -714,9 +716,7 @@
     
       
         
-      
-        
-      
+          
         
       
         
@@ -732,48 +732,58 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../reports/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
     
   
-  Advanced Usages
+  Reports
 
     
   </span>
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-  Advanced Usages
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+            </a>
             
               
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Reports
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
                 
+              
+                
+                  
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../../advanced_usages/caching/" class="md-nav__link">
+      <a href="../../../reports/anta/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Caching in ANTA
+  ANTA Test Reports
 
     
   </span>
@@ -784,91 +794,11 @@
     </li>
   
 
-              
-            
-              
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../advanced_usages/custom-tests/" class="md-nav__link">
+              
+            </ul>
+          </nav>
         
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Developing ANTA tests
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../advanced_usages/as-python-lib/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  ANTA as a Python Library
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../advanced_usages/env-vars/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Environment Variables
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -973,18 +903,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1008,10 +939,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1035,10 +966,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1062,10 +993,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1089,10 +1020,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
     
@@ -1307,10 +1238,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1334,10 +1265,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1361,10 +1292,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1388,10 +1319,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1415,10 +1346,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1442,10 +1373,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1469,10 +1400,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1496,10 +1427,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1523,10 +1454,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1550,10 +1481,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1577,10 +1508,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1604,10 +1535,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1631,10 +1562,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1658,10 +1589,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1685,10 +1616,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1712,10 +1643,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1759,18 +1690,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_21">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_21_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_7_21">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Routing
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -1794,10 +1726,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1821,10 +1753,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1848,10 +1780,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1875,18 +1807,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1910,10 +1843,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1937,10 +1870,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1964,10 +1897,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -1991,10 +1924,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2018,10 +1951,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2045,10 +1978,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2072,10 +2005,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2099,10 +2032,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2126,10 +2059,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -2143,18 +2077,6 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -2182,6 +2104,450 @@
   <span class="md-ellipsis">
     
   
+  Security Advisory
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Security Advisory
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Usage
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Report formats and results
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tests
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_8_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Tests
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/tests-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Overview
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Tests
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../security-advisory/lab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Test in the lab
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Advanced Usages
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Advanced Usages
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced_usages/caching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Caching in ANTA
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced_usages/custom-tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Developing ANTA tests
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced_usages/as-python-lib/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ANTA as a Python Library
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../advanced_usages/env-vars/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Environment Variables
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
   API Documentation
 
     
@@ -2192,18 +2558,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   API Documentation
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2227,10 +2594,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2254,10 +2621,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2281,10 +2648,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2308,10 +2675,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2335,10 +2702,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2360,10 +2727,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_6" >
         
           
-          <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_6" id="__nav_10_6_label" tabindex="0">
             
   
   
@@ -2380,18 +2747,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_6">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_6">
+              <span class="md-nav__icon md-icon"></span>
+              
   
   Tests
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2415,10 +2783,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2442,10 +2810,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2469,18 +2837,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2504,10 +2873,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2531,17 +2900,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_8" >
         
           
-          <label class="md-nav__link" for="__nav_8_8" id="__nav_8_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10_8" id="__nav_10_8_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-  Reporters
+  Reporter API
 
     
   </span>
@@ -2551,18 +2920,19 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_8">
-            <span class="md-nav__icon md-icon"></span>
-            
+        
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_8_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_10_8">
+              <span class="md-nav__icon md-icon"></span>
+              
   
-  Reporters
+  Reporter API
 
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
               
                 
+                  
   
   
   
@@ -2586,10 +2956,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2613,10 +2983,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2640,10 +3010,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2667,18 +3037,19 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2702,10 +3073,10 @@
     </li>
   
 
-              
-            
+                
               
                 
+                  
   
   
   
@@ -2729,10 +3100,11 @@
     </li>
   
 
+                
               
-            
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+        
       
     </li>
   
@@ -3131,13 +3503,15 @@
 
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
+
   
   
 
 
-  <h1 id="__skip">ANTA Tests for device configuration</h1>
+  <h1>Configuration</h1>
 
 <!--
   ~ Copyright (c) 2023-2026 Arista Networks, Inc.
@@ -3153,8 +3527,6 @@
 
 
     <div class="doc doc-contents first">
-
-        <p>Module related to the device configuration tests.</p>
 
 
 
@@ -3224,85 +3596,85 @@ See the examples below for the full range of supported use cases.</p>
 
 <span class="w">        </span><span class="c1"># exact (default mode) — command must exist verbatim</span>
 <span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;aaa</span><span class="nv"> </span><span class="s">authorization</span><span class="nv"> </span><span class="s">exec</span><span class="nv"> </span><span class="s">default</span><span class="nv"> </span><span class="s">local&quot;</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AAA</span><span class="nv"> </span><span class="s">authorization&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"aaa</span><span class="nv"> </span><span class="s">authorization</span><span class="nv"> </span><span class="s">exec</span><span class="nv"> </span><span class="s">default</span><span class="nv"> </span><span class="s">local"</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"AAA</span><span class="nv"> </span><span class="s">authorization"</span>
 
 <span class="w">        </span><span class="c1"># exact + absent — command must NOT exist</span>
 <span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;enable</span><span class="nv"> </span><span class="s">password&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"enable</span><span class="nv"> </span><span class="s">password"</span>
 <span class="w">              </span><span class="nt">absent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;No</span><span class="nv"> </span><span class="s">static</span><span class="nv"> </span><span class="s">enable</span><span class="nv"> </span><span class="s">password&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"No</span><span class="nv"> </span><span class="s">static</span><span class="nv"> </span><span class="s">enable</span><span class="nv"> </span><span class="s">password"</span>
 
 <span class="w">        </span><span class="c1"># contains — at least one command must contain this substring</span>
 <span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ntp</span><span class="nv"> </span><span class="s">server&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"ntp</span><span class="nv"> </span><span class="s">server"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">contains</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;NTP</span><span class="nv"> </span><span class="s">server</span><span class="nv"> </span><span class="s">configured&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"NTP</span><span class="nv"> </span><span class="s">server</span><span class="nv"> </span><span class="s">configured"</span>
 
 <span class="w">        </span><span class="c1"># contains + absent — no command may contain this substring</span>
 <span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;snmp-server</span><span class="nv"> </span><span class="s">community&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"snmp-server</span><span class="nv"> </span><span class="s">community"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">contains</span>
 <span class="w">              </span><span class="nt">absent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;No</span><span class="nv"> </span><span class="s">SNMP</span><span class="nv"> </span><span class="s">community</span><span class="nv"> </span><span class="s">strings&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"No</span><span class="nv"> </span><span class="s">SNMP</span><span class="nv"> </span><span class="s">community</span><span class="nv"> </span><span class="s">strings"</span>
 
 <span class="w">        </span><span class="c1"># regex — at least one command must match this pattern</span>
 <span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;logging</span><span class="nv"> </span><span class="s">host</span><span class="nv"> </span><span class="s">\\S+&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"logging</span><span class="nv"> </span><span class="s">host</span><span class="nv"> </span><span class="s">\\S+"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">regex</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Remote</span><span class="nv"> </span><span class="s">syslog</span><span class="nv"> </span><span class="s">configured&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"Remote</span><span class="nv"> </span><span class="s">syslog</span><span class="nv"> </span><span class="s">configured"</span>
 
 <span class="w">        </span><span class="c1"># regex + absent — no command may match this pattern</span>
 <span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;username</span><span class="nv"> </span><span class="s">.*</span><span class="nv"> </span><span class="s">secret</span><span class="nv"> </span><span class="s">0</span><span class="nv"> </span><span class="s">&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"username</span><span class="nv"> </span><span class="s">.*</span><span class="nv"> </span><span class="s">secret</span><span class="nv"> </span><span class="s">0</span><span class="nv"> </span><span class="s">"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">regex</span>
 <span class="w">              </span><span class="nt">absent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;No</span><span class="nv"> </span><span class="s">plaintext</span><span class="nv"> </span><span class="s">secrets&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"No</span><span class="nv"> </span><span class="s">plaintext</span><span class="nv"> </span><span class="s">secrets"</span>
 
 <span class="w">        </span><span class="c1"># ━━━ SINGLE SECTION ━━━</span>
 <span class="w">        </span><span class="c1"># Target a specific running-config section. Each element uses exact key</span>
 <span class="w">        </span><span class="c1"># lookup first, falling back to a regex fullmatch.</span>
 
 <span class="w">        </span><span class="c1"># Multiple entries validated within the same section</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;management</span><span class="nv"> </span><span class="s">api</span><span class="nv"> </span><span class="s">http-commands&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"management</span><span class="nv"> </span><span class="s">api</span><span class="nv"> </span><span class="s">http-commands"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;no</span><span class="nv"> </span><span class="s">shutdown&quot;</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eAPI</span><span class="nv"> </span><span class="s">enabled&quot;</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;protocol</span><span class="nv"> </span><span class="s">http&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"no</span><span class="nv"> </span><span class="s">shutdown"</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"eAPI</span><span class="nv"> </span><span class="s">enabled"</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"protocol</span><span class="nv"> </span><span class="s">http"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">contains</span>
 <span class="w">              </span><span class="nt">absent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;No</span><span class="nv"> </span><span class="s">plaintext</span><span class="nv"> </span><span class="s">HTTP&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"No</span><span class="nv"> </span><span class="s">plaintext</span><span class="nv"> </span><span class="s">HTTP"</span>
 
 <span class="w">        </span><span class="c1"># ━━━ THRESHOLD CHECKS ━━━</span>
 <span class="w">        </span><span class="c1"># Compare a captured numeric value against a bound.</span>
 <span class="w">        </span><span class="c1"># Requires mode: regex with a capture group.</span>
 
 <span class="w">        </span><span class="c1"># ge — captured value must be &gt;= threshold</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;interface</span><span class="nv"> </span><span class="s">Ethernet1&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"interface</span><span class="nv"> </span><span class="s">Ethernet1"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mtu</span><span class="nv"> </span><span class="s">(\\d+)&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"mtu</span><span class="nv"> </span><span class="s">(\\d+)"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">regex</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Uplink</span><span class="nv"> </span><span class="s">MTU&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"Uplink</span><span class="nv"> </span><span class="s">MTU"</span>
 <span class="w">              </span><span class="nt">threshold</span><span class="p">:</span>
 <span class="w">                </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1500</span>
 <span class="w">                </span><span class="nt">operator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ge</span>
 
 <span class="w">        </span><span class="c1"># eq — captured value must equal threshold (default operator)</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;graceful-restart</span><span class="nv"> </span><span class="s">restart-time</span><span class="nv"> </span><span class="s">(\\d+)&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"graceful-restart</span><span class="nv"> </span><span class="s">restart-time</span><span class="nv"> </span><span class="s">(\\d+)"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">regex</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;BGP</span><span class="nv"> </span><span class="s">graceful-restart</span><span class="nv"> </span><span class="s">timer&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"BGP</span><span class="nv"> </span><span class="s">graceful-restart</span><span class="nv"> </span><span class="s">timer"</span>
 <span class="w">              </span><span class="nt">threshold</span><span class="p">:</span>
 <span class="w">                </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">300</span>
 <span class="w">                </span><span class="nt">operator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eq</span>
 
 <span class="w">        </span><span class="c1"># le — captured value must be &lt;= threshold</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;maximum-paths</span><span class="nv"> </span><span class="s">(\\d+)&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"maximum-paths</span><span class="nv"> </span><span class="s">(\\d+)"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">regex</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;BGP</span><span class="nv"> </span><span class="s">ECMP</span><span class="nv"> </span><span class="s">paths&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"BGP</span><span class="nv"> </span><span class="s">ECMP</span><span class="nv"> </span><span class="s">paths"</span>
 <span class="w">              </span><span class="nt">threshold</span><span class="p">:</span>
 <span class="w">                </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4</span>
 <span class="w">                </span><span class="nt">operator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">le</span>
@@ -3310,39 +3682,39 @@ See the examples below for the full range of supported use cases.</p>
 <span class="w">        </span><span class="c1"># ━━━ NESTED SECTIONS ━━━</span>
 <span class="w">        </span><span class="c1"># Navigate multiple nested sections of the running-config.</span>
 
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;management</span><span class="nv"> </span><span class="s">api</span><span class="nv"> </span><span class="s">http-commands&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;vrf</span><span class="nv"> </span><span class="s">MGMT&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"management</span><span class="nv"> </span><span class="s">api</span><span class="nv"> </span><span class="s">http-commands"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"vrf</span><span class="nv"> </span><span class="s">MGMT"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;no</span><span class="nv"> </span><span class="s">shutdown&quot;</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eAPI</span><span class="nv"> </span><span class="s">enabled</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">MGMT</span><span class="nv"> </span><span class="s">VRF&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"no</span><span class="nv"> </span><span class="s">shutdown"</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"eAPI</span><span class="nv"> </span><span class="s">enabled</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">MGMT</span><span class="nv"> </span><span class="s">VRF"</span>
 
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;address-family</span><span class="nv"> </span><span class="s">evpn&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"address-family</span><span class="nv"> </span><span class="s">evpn"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;neighbor</span><span class="nv"> </span><span class="s">EVPN-OVERLAY-PEERS</span><span class="nv"> </span><span class="s">activate&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"neighbor</span><span class="nv"> </span><span class="s">EVPN-OVERLAY-PEERS</span><span class="nv"> </span><span class="s">activate"</span>
 
 <span class="w">        </span><span class="c1"># ━━━ WILDCARD SECTIONS ━━━</span>
 <span class="w">        </span><span class="c1"># Regex patterns matching multiple sections. Each match</span>
 <span class="w">        </span><span class="c1"># produces its own independent atomic result.</span>
 
 <span class="w">        </span><span class="c1"># All Ethernet interfaces must have a description</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;interface</span><span class="nv"> </span><span class="s">Ethernet\\d+&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"interface</span><span class="nv"> </span><span class="s">Ethernet\\d+"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;description&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"description"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">contains</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Ethernet</span><span class="nv"> </span><span class="s">description&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"Ethernet</span><span class="nv"> </span><span class="s">description"</span>
 
 <span class="w">        </span><span class="c1"># All BGP VRFs must have a router-id</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;vrf</span><span class="nv"> </span><span class="s">.*&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"vrf</span><span class="nv"> </span><span class="s">.*"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;router-id&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"router-id"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">contains</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;BGP</span><span class="nv"> </span><span class="s">VRF</span><span class="nv"> </span><span class="s">router-id&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"BGP</span><span class="nv"> </span><span class="s">VRF</span><span class="nv"> </span><span class="s">router-id"</span>
 
 <span class="w">        </span><span class="c1"># Wildcard + threshold — fleet-wide MTU check</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;interface</span><span class="nv"> </span><span class="s">Ethernet\\d+$&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"interface</span><span class="nv"> </span><span class="s">Ethernet\\d+$"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span>
-<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mtu</span><span class="nv"> </span><span class="s">(\\d+)&quot;</span>
+<span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="s">"mtu</span><span class="nv"> </span><span class="s">(\\d+)"</span>
 <span class="w">              </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">regex</span>
-<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Global</span><span class="nv"> </span><span class="s">MTU</span><span class="nv"> </span><span class="s">policy&quot;</span>
+<span class="w">              </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"Global</span><span class="nv"> </span><span class="s">MTU</span><span class="nv"> </span><span class="s">policy"</span>
 <span class="w">              </span><span class="nt">threshold</span><span class="p">:</span>
 <span class="w">                </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1500</span>
 <span class="w">                </span><span class="nt">operator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ge</span>
@@ -3350,10 +3722,11 @@ See the examples below for the full range of supported use cases.</p>
 <span class="w">        </span><span class="c1"># ━━━ SECTION EXISTENCE CHECK ━━━</span>
 <span class="w">        </span><span class="c1"># Use entries: [] to verify a section exists without checking commands.</span>
 
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">section</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"router</span><span class="nv"> </span><span class="s">bgp</span><span class="nv"> </span><span class="s">\\d+"</span><span class="p p-Indicator">]</span>
 <span class="w">          </span><span class="nt">entries</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
 </code></pre></div>
 </details>
+
 
 
 
@@ -3387,7 +3760,7 @@ See the examples below for the full range of supported use cases.</p>
               <tr>
                 <td><code>rules</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;ConfigRule&lt;/span&gt;" href="./#anta.input_models.configuration.ConfigRule">ConfigRule</a>]</code>
+                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#list">list</a>[<a class="autorefs autorefs-internal" title="ConfigRule (anta.input_models.configuration.ConfigRule)" href="./#anta.input_models.configuration.ConfigRule">ConfigRule</a>]</code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -3407,7 +3780,7 @@ See the examples below for the full range of supported use cases.</p>
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/configuration.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">137</span>
 <span class="normal">138</span>
@@ -3664,7 +4037,7 @@ See the examples below for the full range of supported use cases.</p>
 <span class="normal">389</span>
 <span class="normal">390</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@preview_test_class</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">VerifyRunningConfig</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Verifies the running-config against a set of rules.</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">"""Verifies the running-config against a set of rules.</span>
 
 <span class="sd">    This test supports exact, substring, and regex matching with optional numeric threshold comparisons.</span>
 <span class="sd">    See the examples below for the full range of supported use cases.</span>
@@ -3687,85 +4060,85 @@ See the examples below for the full range of supported use cases.</p>
 
 <span class="sd">            # exact (default mode) — command must exist verbatim</span>
 <span class="sd">            - entries:</span>
-<span class="sd">                - match: &quot;aaa authorization exec default local&quot;</span>
-<span class="sd">                  description: &quot;AAA authorization&quot;</span>
+<span class="sd">                - match: "aaa authorization exec default local"</span>
+<span class="sd">                  description: "AAA authorization"</span>
 
 <span class="sd">            # exact + absent — command must NOT exist</span>
 <span class="sd">            - entries:</span>
-<span class="sd">                - match: &quot;enable password&quot;</span>
+<span class="sd">                - match: "enable password"</span>
 <span class="sd">                  absent: true</span>
-<span class="sd">                  description: &quot;No static enable password&quot;</span>
+<span class="sd">                  description: "No static enable password"</span>
 
 <span class="sd">            # contains — at least one command must contain this substring</span>
 <span class="sd">            - entries:</span>
-<span class="sd">                - match: &quot;ntp server&quot;</span>
+<span class="sd">                - match: "ntp server"</span>
 <span class="sd">                  mode: contains</span>
-<span class="sd">                  description: &quot;NTP server configured&quot;</span>
+<span class="sd">                  description: "NTP server configured"</span>
 
 <span class="sd">            # contains + absent — no command may contain this substring</span>
 <span class="sd">            - entries:</span>
-<span class="sd">                - match: &quot;snmp-server community&quot;</span>
+<span class="sd">                - match: "snmp-server community"</span>
 <span class="sd">                  mode: contains</span>
 <span class="sd">                  absent: true</span>
-<span class="sd">                  description: &quot;No SNMP community strings&quot;</span>
+<span class="sd">                  description: "No SNMP community strings"</span>
 
 <span class="sd">            # regex — at least one command must match this pattern</span>
 <span class="sd">            - entries:</span>
-<span class="sd">                - match: &quot;logging host \\S+&quot;</span>
+<span class="sd">                - match: "logging host \\S+"</span>
 <span class="sd">                  mode: regex</span>
-<span class="sd">                  description: &quot;Remote syslog configured&quot;</span>
+<span class="sd">                  description: "Remote syslog configured"</span>
 
 <span class="sd">            # regex + absent — no command may match this pattern</span>
 <span class="sd">            - entries:</span>
-<span class="sd">                - match: &quot;username .* secret 0 &quot;</span>
+<span class="sd">                - match: "username .* secret 0 "</span>
 <span class="sd">                  mode: regex</span>
 <span class="sd">                  absent: true</span>
-<span class="sd">                  description: &quot;No plaintext secrets&quot;</span>
+<span class="sd">                  description: "No plaintext secrets"</span>
 
 <span class="sd">            # ━━━ SINGLE SECTION ━━━</span>
 <span class="sd">            # Target a specific running-config section. Each element uses exact key</span>
 <span class="sd">            # lookup first, falling back to a regex fullmatch.</span>
 
 <span class="sd">            # Multiple entries validated within the same section</span>
-<span class="sd">            - section: [&quot;management api http-commands&quot;]</span>
+<span class="sd">            - section: ["management api http-commands"]</span>
 <span class="sd">              entries:</span>
-<span class="sd">                - match: &quot;no shutdown&quot;</span>
-<span class="sd">                  description: &quot;eAPI enabled&quot;</span>
-<span class="sd">                - match: &quot;protocol http&quot;</span>
+<span class="sd">                - match: "no shutdown"</span>
+<span class="sd">                  description: "eAPI enabled"</span>
+<span class="sd">                - match: "protocol http"</span>
 <span class="sd">                  mode: contains</span>
 <span class="sd">                  absent: true</span>
-<span class="sd">                  description: &quot;No plaintext HTTP&quot;</span>
+<span class="sd">                  description: "No plaintext HTTP"</span>
 
 <span class="sd">            # ━━━ THRESHOLD CHECKS ━━━</span>
 <span class="sd">            # Compare a captured numeric value against a bound.</span>
 <span class="sd">            # Requires mode: regex with a capture group.</span>
 
 <span class="sd">            # ge — captured value must be &gt;= threshold</span>
-<span class="sd">            - section: [&quot;interface Ethernet1&quot;]</span>
+<span class="sd">            - section: ["interface Ethernet1"]</span>
 <span class="sd">              entries:</span>
-<span class="sd">                - match: &quot;mtu (\\d+)&quot;</span>
+<span class="sd">                - match: "mtu (\\d+)"</span>
 <span class="sd">                  mode: regex</span>
-<span class="sd">                  description: &quot;Uplink MTU&quot;</span>
+<span class="sd">                  description: "Uplink MTU"</span>
 <span class="sd">                  threshold:</span>
 <span class="sd">                    value: 1500</span>
 <span class="sd">                    operator: ge</span>
 
 <span class="sd">            # eq — captured value must equal threshold (default operator)</span>
-<span class="sd">            - section: [&quot;router bgp \\d+&quot;]</span>
+<span class="sd">            - section: ["router bgp \\d+"]</span>
 <span class="sd">              entries:</span>
-<span class="sd">                - match: &quot;graceful-restart restart-time (\\d+)&quot;</span>
+<span class="sd">                - match: "graceful-restart restart-time (\\d+)"</span>
 <span class="sd">                  mode: regex</span>
-<span class="sd">                  description: &quot;BGP graceful-restart timer&quot;</span>
+<span class="sd">                  description: "BGP graceful-restart timer"</span>
 <span class="sd">                  threshold:</span>
 <span class="sd">                    value: 300</span>
 <span class="sd">                    operator: eq</span>
 
 <span class="sd">            # le — captured value must be &lt;= threshold</span>
-<span class="sd">            - section: [&quot;router bgp \\d+&quot;]</span>
+<span class="sd">            - section: ["router bgp \\d+"]</span>
 <span class="sd">              entries:</span>
-<span class="sd">                - match: &quot;maximum-paths (\\d+)&quot;</span>
+<span class="sd">                - match: "maximum-paths (\\d+)"</span>
 <span class="sd">                  mode: regex</span>
-<span class="sd">                  description: &quot;BGP ECMP paths&quot;</span>
+<span class="sd">                  description: "BGP ECMP paths"</span>
 <span class="sd">                  threshold:</span>
 <span class="sd">                    value: 4</span>
 <span class="sd">                    operator: le</span>
@@ -3773,39 +4146,39 @@ See the examples below for the full range of supported use cases.</p>
 <span class="sd">            # ━━━ NESTED SECTIONS ━━━</span>
 <span class="sd">            # Navigate multiple nested sections of the running-config.</span>
 
-<span class="sd">            - section: [&quot;management api http-commands&quot;, &quot;vrf MGMT&quot;]</span>
+<span class="sd">            - section: ["management api http-commands", "vrf MGMT"]</span>
 <span class="sd">              entries:</span>
-<span class="sd">                - match: &quot;no shutdown&quot;</span>
-<span class="sd">                  description: &quot;eAPI enabled in MGMT VRF&quot;</span>
+<span class="sd">                - match: "no shutdown"</span>
+<span class="sd">                  description: "eAPI enabled in MGMT VRF"</span>
 
-<span class="sd">            - section: [&quot;router bgp \\d+&quot;, &quot;address-family evpn&quot;]</span>
+<span class="sd">            - section: ["router bgp \\d+", "address-family evpn"]</span>
 <span class="sd">              entries:</span>
-<span class="sd">                - match: &quot;neighbor EVPN-OVERLAY-PEERS activate&quot;</span>
+<span class="sd">                - match: "neighbor EVPN-OVERLAY-PEERS activate"</span>
 
 <span class="sd">            # ━━━ WILDCARD SECTIONS ━━━</span>
 <span class="sd">            # Regex patterns matching multiple sections. Each match</span>
 <span class="sd">            # produces its own independent atomic result.</span>
 
 <span class="sd">            # All Ethernet interfaces must have a description</span>
-<span class="sd">            - section: [&quot;interface Ethernet\\d+&quot;]</span>
+<span class="sd">            - section: ["interface Ethernet\\d+"]</span>
 <span class="sd">              entries:</span>
-<span class="sd">                - match: &quot;description&quot;</span>
+<span class="sd">                - match: "description"</span>
 <span class="sd">                  mode: contains</span>
-<span class="sd">                  description: &quot;Ethernet description&quot;</span>
+<span class="sd">                  description: "Ethernet description"</span>
 
 <span class="sd">            # All BGP VRFs must have a router-id</span>
-<span class="sd">            - section: [&quot;router bgp \\d+&quot;, &quot;vrf .*&quot;]</span>
+<span class="sd">            - section: ["router bgp \\d+", "vrf .*"]</span>
 <span class="sd">              entries:</span>
-<span class="sd">                - match: &quot;router-id&quot;</span>
+<span class="sd">                - match: "router-id"</span>
 <span class="sd">                  mode: contains</span>
-<span class="sd">                  description: &quot;BGP VRF router-id&quot;</span>
+<span class="sd">                  description: "BGP VRF router-id"</span>
 
 <span class="sd">            # Wildcard + threshold — fleet-wide MTU check</span>
-<span class="sd">            - section: [&quot;interface Ethernet\\d+$&quot;]</span>
+<span class="sd">            - section: ["interface Ethernet\\d+$"]</span>
 <span class="sd">              entries:</span>
-<span class="sd">                - match: &quot;mtu (\\d+)&quot;</span>
+<span class="sd">                - match: "mtu (\\d+)"</span>
 <span class="sd">                  mode: regex</span>
-<span class="sd">                  description: &quot;Global MTU policy&quot;</span>
+<span class="sd">                  description: "Global MTU policy"</span>
 <span class="sd">                  threshold:</span>
 <span class="sd">                    value: 1500</span>
 <span class="sd">                    operator: ge</span>
@@ -3813,26 +4186,26 @@ See the examples below for the full range of supported use cases.</p>
 <span class="sd">            # ━━━ SECTION EXISTENCE CHECK ━━━</span>
 <span class="sd">            # Use entries: [] to verify a section exists without checking commands.</span>
 
-<span class="sd">            - section: [&quot;router bgp \\d+&quot;]</span>
+<span class="sd">            - section: ["router bgp \\d+"]</span>
 <span class="sd">              entries: []</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;configuration&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show running-config&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"configuration"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show running-config"</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
     <span class="n">_atomic_support</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 
     <span class="k">class</span><span class="w"> </span><span class="nc">Input</span><span class="p">(</span><span class="n">AntaTest</span><span class="o">.</span><span class="n">Input</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Input model for the VerifyRunningConfig test.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Input model for the VerifyRunningConfig test."""</span>
 
         <span class="n">rules</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ConfigRule</span><span class="p">]</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;List of rules to validate. Each rule defines an optional section scope and the entries to verify.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""List of rules to validate. Each rule defines an optional section scope and the entries to verify."""</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyRunningConfig.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyRunningConfig."""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json_output</span><span class="p">[</span><span class="s2">&quot;cmds&quot;</span><span class="p">]</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json_output</span><span class="p">[</span><span class="s2">"cmds"</span><span class="p">]</span>
         <span class="n">top_level_cmds</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 
         <span class="k">for</span> <span class="n">rule</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">rules</span><span class="p">:</span>
@@ -3842,66 +4215,66 @@ See the examples below for the full range of supported use cases.</p>
                 <span class="n">resolved_sections</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_resolve_section_path</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">rule</span><span class="o">.</span><span class="n">section</span><span class="p">)</span>
                 <span class="k">if</span> <span class="ow">not</span> <span class="n">resolved_sections</span><span class="p">:</span>
                     <span class="c1"># Section missing — one failure atomic is enough; no entries to validate.</span>
-                    <span class="n">description</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Section &#39;</span><span class="si">{</span><span class="s1">&#39; &gt; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rule</span><span class="o">.</span><span class="n">section</span><span class="p">)</span><span class="si">}</span><span class="s2">&#39; in the running-config&quot;</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">)</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">&quot;Not found&quot;</span><span class="p">)</span>
+                    <span class="n">description</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"Section '</span><span class="si">{</span><span class="s1">' &gt; '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rule</span><span class="o">.</span><span class="n">section</span><span class="p">)</span><span class="si">}</span><span class="s2">' in the running-config"</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">)</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">"Not found"</span><span class="p">)</span>
                     <span class="k">continue</span>
                 <span class="k">for</span> <span class="n">section_path</span><span class="p">,</span> <span class="n">cmds</span> <span class="ow">in</span> <span class="n">resolved_sections</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
                     <span class="bp">self</span><span class="o">.</span><span class="n">_validate_rule</span><span class="p">(</span><span class="n">rule</span><span class="p">,</span> <span class="n">cmds</span><span class="o">=</span><span class="n">cmds</span><span class="p">,</span> <span class="n">section_path</span><span class="o">=</span><span class="n">section_path</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_resolve_section_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">section_patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Resolve a section path against the running-config tree.</span>
+<span class="w">        </span><span class="sd">"""Resolve a section path against the running-config tree.</span>
 
 <span class="sd">        Navigates the config tree level by level. Each pattern is matched by exact key lookup first;</span>
 <span class="sd">        if no exact key exists, `re.fullmatch` is applied against all keys at that level.</span>
 
 <span class="sd">        Returns a mapping of resolved path to command list. An empty dict means no section matched.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">pattern</span><span class="p">,</span> <span class="o">*</span><span class="n">remaining</span> <span class="o">=</span> <span class="n">section_patterns</span>
 
         <span class="k">if</span> <span class="n">pattern</span> <span class="ow">in</span> <span class="n">config</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="n">pattern</span><span class="p">],</span> <span class="nb">dict</span><span class="p">):</span>
-            <span class="c1"># Exact key found; EOS nests sub-commands under a &quot;cmds&quot; key.</span>
-            <span class="n">matches</span> <span class="o">=</span> <span class="p">[(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">config</span><span class="p">[</span><span class="n">pattern</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;cmds&quot;</span><span class="p">,</span> <span class="p">{}))]</span>
+            <span class="c1"># Exact key found; EOS nests sub-commands under a "cmds" key.</span>
+            <span class="n">matches</span> <span class="o">=</span> <span class="p">[(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">config</span><span class="p">[</span><span class="n">pattern</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"cmds"</span><span class="p">,</span> <span class="p">{}))]</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="c1"># Regex fallback; re.fullmatch prevents &quot;Ethernet1&quot; from partially matching &quot;Ethernet11&quot;.</span>
-            <span class="n">matches</span> <span class="o">=</span> <span class="p">[(</span><span class="n">key</span><span class="p">,</span> <span class="n">node</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;cmds&quot;</span><span class="p">,</span> <span class="p">{}))</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span> <span class="ow">and</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">key</span><span class="p">)]</span>
+            <span class="c1"># Regex fallback; re.fullmatch prevents "Ethernet1" from partially matching "Ethernet11".</span>
+            <span class="n">matches</span> <span class="o">=</span> <span class="p">[(</span><span class="n">key</span><span class="p">,</span> <span class="n">node</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"cmds"</span><span class="p">,</span> <span class="p">{}))</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span> <span class="ow">and</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">key</span><span class="p">)]</span>
 
         <span class="n">results</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">sub_config</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">remaining</span><span class="p">:</span>
-                <span class="c1"># Last pattern — we&#39;ve reached the leaf; collect the commands.</span>
+                <span class="c1"># Last pattern — we've reached the leaf; collect the commands.</span>
                 <span class="n">results</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">sub_config</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="c1"># More patterns to resolve — recurse deeper and join the paths.</span>
                 <span class="k">for</span> <span class="n">child_path</span><span class="p">,</span> <span class="n">child_cmds</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_resolve_section_path</span><span class="p">(</span><span class="n">sub_config</span><span class="p">,</span> <span class="n">remaining</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-                    <span class="n">results</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2"> &gt; </span><span class="si">{</span><span class="n">child_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">child_cmds</span>
+                    <span class="n">results</span><span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2"> &gt; </span><span class="si">{</span><span class="n">child_path</span><span class="si">}</span><span class="s2">"</span><span class="p">]</span> <span class="o">=</span> <span class="n">child_cmds</span>
         <span class="k">return</span> <span class="n">results</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_validate_rule</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rule</span><span class="p">:</span> <span class="n">ConfigRule</span><span class="p">,</span> <span class="n">cmds</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="o">*</span><span class="p">,</span> <span class="n">section_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Validate all entries of a rule.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Validate all entries of a rule."""</span>
         <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">rule</span><span class="o">.</span><span class="n">entries</span><span class="p">:</span>
             <span class="n">description</span> <span class="o">=</span> <span class="n">entry</span><span class="o">.</span><span class="n">build_description</span><span class="p">(</span><span class="n">section_path</span><span class="p">)</span>
             <span class="n">atomic_result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="n">AntaTestStatus</span><span class="o">.</span><span class="n">SUCCESS</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_validate_entry</span><span class="p">(</span><span class="n">entry</span><span class="p">,</span> <span class="n">cmds</span><span class="p">,</span> <span class="n">atomic_result</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_validate_entry</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry</span><span class="p">:</span> <span class="n">ConfigEntry</span><span class="p">,</span> <span class="n">cmds</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">atomic_result</span><span class="p">:</span> <span class="n">AtomicTestResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Validate a single entry against the resolved command list.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Validate a single entry against the resolved command list."""</span>
         <span class="n">matched</span> <span class="o">=</span> <span class="n">entry</span><span class="o">.</span><span class="n">matches</span><span class="p">(</span><span class="n">cmds</span><span class="p">)</span>
 
-        <span class="c1"># Entry must be present but wasn&#39;t found.</span>
+        <span class="c1"># Entry must be present but wasn't found.</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">entry</span><span class="o">.</span><span class="n">absent</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">matched</span><span class="p">:</span>
-            <span class="n">atomic_result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">&quot;Not found&quot;</span><span class="p">)</span>
+            <span class="n">atomic_result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">"Not found"</span><span class="p">)</span>
             <span class="k">return</span>
 
         <span class="c1"># Entry must be absent but was found.</span>
         <span class="k">if</span> <span class="n">entry</span><span class="o">.</span><span class="n">absent</span> <span class="ow">and</span> <span class="n">matched</span><span class="p">:</span>
-            <span class="n">atomic_result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">&quot;Expected to not match&quot;</span> <span class="k">if</span> <span class="n">entry</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;regex&quot;</span> <span class="k">else</span> <span class="s2">&quot;Expected to be absent&quot;</span><span class="p">)</span>
+            <span class="n">atomic_result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">"Expected to not match"</span> <span class="k">if</span> <span class="n">entry</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"regex"</span> <span class="k">else</span> <span class="s2">"Expected to be absent"</span><span class="p">)</span>
             <span class="k">return</span>
 
         <span class="c1"># Validate threshold if provided.</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_validate_threshold</span><span class="p">(</span><span class="n">entry</span><span class="p">,</span> <span class="n">matched</span><span class="p">,</span> <span class="n">atomic_result</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_validate_threshold</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry</span><span class="p">:</span> <span class="n">ConfigEntry</span><span class="p">,</span> <span class="n">matched</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">atomic_result</span><span class="p">:</span> <span class="n">AtomicTestResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Validate threshold constraints against matched commands.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Validate threshold constraints against matched commands."""</span>
         <span class="k">if</span> <span class="n">entry</span><span class="o">.</span><span class="n">threshold</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="c1"># Nothing to validate.</span>
             <span class="k">return</span>
@@ -3912,10 +4285,10 @@ See the examples below for the full range of supported use cases.</p>
                 <span class="k">try</span><span class="p">:</span>
                     <span class="n">captured</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">match_obj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
                 <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
-                    <span class="n">atomic_result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Captured value &#39;</span><span class="si">{</span><span class="n">match_obj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2">&#39; is not an integer&quot;</span><span class="p">)</span>
+                    <span class="n">atomic_result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Captured value '</span><span class="si">{</span><span class="n">match_obj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2">' is not an integer"</span><span class="p">)</span>
                     <span class="k">continue</span>
                 <span class="k">if</span> <span class="ow">not</span> <span class="n">entry</span><span class="o">.</span><span class="n">threshold</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">captured</span><span class="p">):</span>
-                    <span class="n">atomic_result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Actual: </span><span class="si">{</span><span class="n">captured</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="n">atomic_result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Actual: </span><span class="si">{</span><span class="n">captured</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -3965,6 +4338,7 @@ See the examples below for the full range of supported use cases.</p>
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -3980,7 +4354,7 @@ See the examples below for the full range of supported use cases.</p>
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/configuration.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">54</span>
 <span class="normal">55</span>
@@ -4009,7 +4383,7 @@ See the examples below for the full range of supported use cases.</p>
 <span class="normal">78</span>
 <span class="normal">79</span>
 <span class="normal">80</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">VerifyRunningConfigDiffs</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Verifies there is no difference between the running-config and the startup-config.</span>
+<span class="w">    </span><span class="sd">"""Verifies there is no difference between the running-config and the startup-config.</span>
 
 <span class="sd">    Expected Results</span>
 <span class="sd">    ----------------</span>
@@ -4022,16 +4396,16 @@ See the examples below for the full range of supported use cases.</p>
 <span class="sd">    anta.tests.configuration:</span>
 <span class="sd">      - VerifyRunningConfigDiffs:</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;configuration&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show running-config diffs&quot;</span><span class="p">,</span> <span class="n">ofmt</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)]</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"configuration"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show running-config diffs"</span><span class="p">,</span> <span class="n">ofmt</span><span class="o">=</span><span class="s2">"text"</span><span class="p">)]</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyRunningConfigDiffs.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyRunningConfigDiffs."""</span>
         <span class="n">command_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text_output</span>
-        <span class="k">if</span> <span class="n">command_output</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">command_output</span> <span class="o">==</span> <span class="s2">""</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="n">command_output</span><span class="p">)</span>
@@ -4085,10 +4459,11 @@ drastically impact performance and should only be used if no other test is avail
         <div class="highlight"><pre><span></span><code><span class="nt">anta.tests.configuration</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VerifyRunningConfigLines</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">regex_patterns</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;^enable</span><span class="nv"> </span><span class="s">password.*$&quot;</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;bla</span><span class="nv"> </span><span class="s">bla&quot;</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"^enable</span><span class="nv"> </span><span class="s">password.*$"</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"bla</span><span class="nv"> </span><span class="s">bla"</span>
 </code></pre></div>
 </details>
+
 
 
 
@@ -4122,12 +4497,12 @@ drastically impact performance and should only be used if no other test is avail
               <tr>
                 <td><code>regex_patterns</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;RegexString&lt;/span&gt;
+                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#list">list</a>[<a class="autorefs autorefs-internal" title="            RegexString
 
 
-  &lt;span class=&quot;doc doc-labels&quot;&gt;
-      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
-  &lt;/span&gt;" href="../types/#anta.custom_types.RegexString">RegexString</a>]</code>
+  
+      module-attribute
+   (anta.custom_types.RegexString)" href="../types/#anta.custom_types.RegexString">RegexString</a>]</code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4147,7 +4522,7 @@ drastically impact performance and should only be used if no other test is avail
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/configuration.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 83</span>
 <span class="normal"> 84</span>
@@ -4200,9 +4575,9 @@ drastically impact performance and should only be used if no other test is avail
 <span class="normal">131</span>
 <span class="normal">132</span>
 <span class="normal">133</span>
-<span class="normal">134</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@deprecated_test_class</span><span class="p">(</span><span class="n">new_tests</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;VerifyRunningConfig&quot;</span><span class="p">],</span> <span class="n">removal_in_version</span><span class="o">=</span><span class="s2">&quot;v2.0.0&quot;</span><span class="p">)</span>
+<span class="normal">134</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@deprecated_test_class</span><span class="p">(</span><span class="n">new_tests</span><span class="o">=</span><span class="p">[</span><span class="s2">"VerifyRunningConfig"</span><span class="p">],</span> <span class="n">removal_in_version</span><span class="o">=</span><span class="s2">"v2.0.0"</span><span class="p">)</span>
 <span class="k">class</span><span class="w"> </span><span class="nc">VerifyRunningConfigLines</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Verifies the given regular expression patterns are present in the running-config.</span>
+<span class="w">    </span><span class="sd">"""Verifies the given regular expression patterns are present in the running-config.</span>
 
 <span class="sd">    !!! warning</span>
 <span class="sd">        Since this uses regular expression searches on the whole running-config, it can</span>
@@ -4221,24 +4596,24 @@ drastically impact performance and should only be used if no other test is avail
 <span class="sd">    anta.tests.configuration:</span>
 <span class="sd">      - VerifyRunningConfigLines:</span>
 <span class="sd">          regex_patterns:</span>
-<span class="sd">            - &quot;^enable password.*$&quot;</span>
-<span class="sd">            - &quot;bla bla&quot;</span>
+<span class="sd">            - "^enable password.*$"</span>
+<span class="sd">            - "bla bla"</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Search the Running-Config for the given RegEx patterns.&quot;</span>
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;configuration&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show running-config&quot;</span><span class="p">,</span> <span class="n">ofmt</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)]</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="s2">"Search the Running-Config for the given RegEx patterns."</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"configuration"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show running-config"</span><span class="p">,</span> <span class="n">ofmt</span><span class="o">=</span><span class="s2">"text"</span><span class="p">)]</span>
 
     <span class="k">class</span><span class="w"> </span><span class="nc">Input</span><span class="p">(</span><span class="n">AntaTest</span><span class="o">.</span><span class="n">Input</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Input model for the VerifyRunningConfigLines test.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Input model for the VerifyRunningConfigLines test."""</span>
 
         <span class="n">regex_patterns</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">RegexString</span><span class="p">]</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;List of regular expressions.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""List of regular expressions."""</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyRunningConfigLines.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyRunningConfigLines."""</span>
         <span class="n">failure_msgs</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="n">command_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text_output</span>
 
@@ -4246,12 +4621,12 @@ drastically impact performance and should only be used if no other test is avail
             <span class="n">re_search</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="ow">not</span> <span class="n">re_search</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">command_output</span><span class="p">):</span>
-                <span class="n">failure_msgs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&#39;</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+                <span class="n">failure_msgs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"'</span><span class="si">{</span><span class="n">pattern</span><span class="si">}</span><span class="s2">'"</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="ow">not</span> <span class="n">failure_msgs</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">&quot;Following patterns were not found: &quot;</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">failure_msgs</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">"Following patterns were not found: "</span> <span class="o">+</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">failure_msgs</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -4301,6 +4676,7 @@ drastically impact performance and should only be used if no other test is avail
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -4316,7 +4692,7 @@ drastically impact performance and should only be used if no other test is avail
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/tests/configuration.py</code></summary>
   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">25</span>
 <span class="normal">26</span>
@@ -4345,7 +4721,7 @@ drastically impact performance and should only be used if no other test is avail
 <span class="normal">49</span>
 <span class="normal">50</span>
 <span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">VerifyZeroTouch</span><span class="p">(</span><span class="n">AntaTest</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Verifies ZeroTouch is disabled.</span>
+<span class="w">    </span><span class="sd">"""Verifies ZeroTouch is disabled.</span>
 
 <span class="sd">    Expected Results</span>
 <span class="sd">    ----------------</span>
@@ -4358,19 +4734,19 @@ drastically impact performance and should only be used if no other test is avail
 <span class="sd">    anta.tests.configuration:</span>
 <span class="sd">      - VerifyZeroTouch:</span>
 <span class="sd">    ```</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;configuration&quot;</span><span class="p">]</span>
-    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">&quot;show zerotouch&quot;</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">categories</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"configuration"</span><span class="p">]</span>
+    <span class="n">commands</span><span class="p">:</span> <span class="n">ClassVar</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">AntaCommand</span> <span class="o">|</span> <span class="n">AntaTemplate</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">AntaCommand</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s2">"show zerotouch"</span><span class="p">,</span> <span class="n">revision</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
 
     <span class="nd">@AntaTest</span><span class="o">.</span><span class="n">anta_test</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Main test function for VerifyZeroTouch.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Main test function for VerifyZeroTouch."""</span>
         <span class="n">command_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">instance_commands</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json_output</span>
-        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">&quot;mode&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;disabled&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">command_output</span><span class="p">[</span><span class="s2">"mode"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"disabled"</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_success</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">&quot;ZTP is NOT disabled&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">is_failure</span><span class="p">(</span><span class="s2">"ZTP is NOT disabled"</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -4393,8 +4769,6 @@ drastically impact performance and should only be used if no other test is avail
 
 
     <div class="doc doc-contents first">
-
-        <p>Module containing input models for configuration tests.</p>
 
 
 
@@ -4442,6 +4816,7 @@ drastically impact performance and should only be used if no other test is avail
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -4466,7 +4841,7 @@ drastically impact performance and should only be used if no other test is avail
               <tr>
                 <td><code>description</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a> | None</code>
+                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a> | None</code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4480,7 +4855,7 @@ drastically impact performance and should only be used if no other test is avail
               <tr>
                 <td><code>match</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></code>
+                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#str">str</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4508,7 +4883,7 @@ drastically impact performance and should only be used if no other test is avail
               <tr>
                 <td><code>absent</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a></code>
+                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#bool">bool</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4522,7 +4897,7 @@ drastically impact performance and should only be used if no other test is avail
               <tr>
                 <td><code>threshold</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;Threshold&lt;/span&gt;" href="./#anta.input_models.configuration.Threshold">Threshold</a> | None</code>
+                      <code><a class="autorefs autorefs-internal" title="Threshold (anta.input_models.configuration.Threshold)" href="./#anta.input_models.configuration.Threshold">Threshold</a> | None</code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4543,9 +4918,14 @@ drastically impact performance and should only be used if no other test is avail
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/input_models/configuration.py</code></summary>
-  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 47</span>
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 42</span>
+<span class="normal"> 43</span>
+<span class="normal"> 44</span>
+<span class="normal"> 45</span>
+<span class="normal"> 46</span>
+<span class="normal"> 47</span>
 <span class="normal"> 48</span>
 <span class="normal"> 49</span>
 <span class="normal"> 50</span>
@@ -4598,70 +4978,65 @@ drastically impact performance and should only be used if no other test is avail
 <span class="normal"> 97</span>
 <span class="normal"> 98</span>
 <span class="normal"> 99</span>
-<span class="normal">100</span>
-<span class="normal">101</span>
-<span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ConfigEntry</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;A single check to validate within a resolved section or across top-level commands.&quot;&quot;&quot;</span>
+<span class="normal">100</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ConfigEntry</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""A single check to validate within a resolved section or across top-level commands."""</span>
 
-    <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span><span class="n">extra</span><span class="o">=</span><span class="s2">&quot;forbid&quot;</span><span class="p">)</span>
+    <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span><span class="n">extra</span><span class="o">=</span><span class="s2">"forbid"</span><span class="p">)</span>
     <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Optional metadata describing the configuration entry. Used for reporting.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Optional metadata describing the configuration entry. Used for reporting."""</span>
     <span class="n">match</span><span class="p">:</span> <span class="nb">str</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;String or pattern to match against commands. For regex mode, standard regex syntax applies.&quot;&quot;&quot;</span>
-    <span class="n">mode</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;exact&quot;</span><span class="p">,</span> <span class="s2">&quot;contains&quot;</span><span class="p">,</span> <span class="s2">&quot;regex&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;exact&quot;</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Match mode: `exact` (verbatim), `contains` (substring), or `regex` (pattern).&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""String or pattern to match against commands. For regex mode, standard regex syntax applies."""</span>
+    <span class="n">mode</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">"exact"</span><span class="p">,</span> <span class="s2">"contains"</span><span class="p">,</span> <span class="s2">"regex"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"exact"</span>
+<span class="w">    </span><span class="sd">"""Match mode: `exact` (verbatim), `contains` (substring), or `regex` (pattern)."""</span>
     <span class="n">absent</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;When `True`, the match must NOT be found.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""When `True`, the match must NOT be found."""</span>
     <span class="n">threshold</span><span class="p">:</span> <span class="n">Threshold</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Optional numeric threshold for regex mode. The first capture group is compared against this bound.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Optional numeric threshold for regex mode. The first capture group is compared against this bound."""</span>
 
-    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;after&quot;</span><span class="p">)</span>
+    <span class="nd">@model_validator</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">"after"</span><span class="p">)</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">validate_entry</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Validate regex syntax for regex mode entries and all threshold constraints.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Validate regex syntax for regex mode entries and all threshold constraints."""</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">absent</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&#39;absent&#39; must be &#39;false&#39; when &#39;threshold&#39; is set&quot;</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="s2">"'absent' must be 'false' when 'threshold' is set"</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">!=</span> <span class="s2">&quot;regex&quot;</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&#39;mode&#39; must be &#39;regex&#39; when &#39;threshold&#39; is set&quot;</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">!=</span> <span class="s2">"regex"</span><span class="p">:</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="s2">"'mode' must be 'regex' when 'threshold' is set"</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;regex&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"regex"</span><span class="p">:</span>
             <span class="k">try</span><span class="p">:</span>
                 <span class="n">compiled</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="p">)</span>
             <span class="k">except</span> <span class="n">re</span><span class="o">.</span><span class="n">error</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&#39;match&#39; is not a valid regular expression: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"'match' is not a valid regular expression: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">compiled</span><span class="o">.</span><span class="n">groups</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&#39;match&#39; must have a capture group when &#39;threshold&#39; is set&quot;</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="s2">"'match' must have a capture group when 'threshold' is set"</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">matches</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">commands</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the subset of `commands` that satisfy this entry&#39;s match criteria.&quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;exact&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""Return the subset of `commands` that satisfy this entry's match criteria."""</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"exact"</span><span class="p">:</span>
             <span class="k">return</span> <span class="p">[</span><span class="n">cmd</span> <span class="k">for</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">commands</span> <span class="k">if</span> <span class="n">cmd</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="p">]</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;contains&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"contains"</span><span class="p">:</span>
             <span class="k">return</span> <span class="p">[</span><span class="n">cmd</span> <span class="k">for</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">commands</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">match</span> <span class="ow">in</span> <span class="n">cmd</span><span class="p">]</span>
         <span class="c1"># re.search (not fullmatch) — the pattern may appear anywhere within the command string.</span>
         <span class="k">return</span> <span class="p">[</span><span class="n">cmd</span> <span class="k">for</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">commands</span> <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="p">,</span> <span class="n">cmd</span><span class="p">)]</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">build_description</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">section_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Build the description from this entry fields and an optional resolved section path.&quot;&quot;&quot;</span>
-        <span class="n">location</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&#39;</span><span class="si">{</span><span class="n">section_path</span><span class="si">}</span><span class="s2">&#39;&quot;</span> <span class="k">if</span> <span class="n">section_path</span> <span class="k">else</span> <span class="s2">&quot;the running-config&quot;</span>
+<span class="w">        </span><span class="sd">"""Build the description from this entry fields and an optional resolved section path."""</span>
+        <span class="n">location</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"'</span><span class="si">{</span><span class="n">section_path</span><span class="si">}</span><span class="s2">'"</span> <span class="k">if</span> <span class="n">section_path</span> <span class="k">else</span> <span class="s2">"the running-config"</span>
 
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">threshold</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">auto</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Captured value of &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="si">}</span><span class="s2">&#39; </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">threshold</span><span class="si">}</span><span class="s2"> in </span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">&quot;</span>
-        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;exact&quot;</span><span class="p">:</span>
-            <span class="n">auto</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Command &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="si">}</span><span class="s2">&#39; in </span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">&quot;</span>
-        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;contains&quot;</span><span class="p">:</span>
-            <span class="n">auto</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Substring &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="si">}</span><span class="s2">&#39; in </span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">auto</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"Captured value of '</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="si">}</span><span class="s2">' </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">threshold</span><span class="si">}</span><span class="s2"> in </span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">"</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"exact"</span><span class="p">:</span>
+            <span class="n">auto</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"Command '</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="si">}</span><span class="s2">' in </span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">"</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"contains"</span><span class="p">:</span>
+            <span class="n">auto</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"Substring '</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="si">}</span><span class="s2">' in </span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">"</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">auto</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Pattern &#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="si">}</span><span class="s2">&#39; in </span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">auto</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"Pattern '</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">match</span><span class="si">}</span><span class="s2">' in </span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">"</span>
 
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">description</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">auto</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">description</span> <span class="k">else</span> <span class="n">auto</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">description</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">auto</span><span class="si">}</span><span class="s2">"</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">description</span> <span class="k">else</span> <span class="n">auto</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -4695,6 +5070,7 @@ drastically impact performance and should only be used if no other test is avail
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -4719,12 +5095,12 @@ drastically impact performance and should only be used if no other test is avail
               <tr>
                 <td><code>section</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-external" title="typing.Annotated" href="https://docs.python.org/3/library/typing.html#typing.Annotated">Annotated</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" title="typing.Annotated" href="https://docs.python.org/3/library/typing.html#typing.Annotated">Annotated</a>[<a class="autorefs autorefs-internal" title="&lt;code class=&quot;doc-symbol doc-symbol-heading doc-symbol-attribute&quot;&gt;&lt;/code&gt;            &lt;span class=&quot;doc doc-object-name doc-attribute-name&quot;&gt;RegexString&lt;/span&gt;
+                      <code><a class="autorefs autorefs-external" title="typing.Annotated" href="https://docs.python.org/3/library/typing.html#typing.Annotated">Annotated</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#list">list</a>[<a class="autorefs autorefs-external" title="typing.Annotated" href="https://docs.python.org/3/library/typing.html#typing.Annotated">Annotated</a>[<a class="autorefs autorefs-internal" title="            RegexString
 
 
-  &lt;span class=&quot;doc doc-labels&quot;&gt;
-      &lt;small class=&quot;doc doc-label doc-label-module-attribute&quot;&gt;&lt;code&gt;module-attribute&lt;/code&gt;&lt;/small&gt;
-  &lt;/span&gt;" href="../types/#anta.custom_types.RegexString">RegexString</a>, <span title="pydantic.Field">Field</span>(<span title="pydantic.Field(min_length)">min_length</span>=1)]], <span title="pydantic.Field">Field</span>(<span title="pydantic.Field(min_length)">min_length</span>=1)] | None</code>
+  
+      module-attribute
+   (anta.custom_types.RegexString)" href="../types/#anta.custom_types.RegexString">RegexString</a>, <span title="pydantic.Field">Field</span>(<span title="pydantic.Field(min_length)">min_length</span>=1)]], <span title="pydantic.Field">Field</span>(<span title="pydantic.Field(min_length)">min_length</span>=1)] | None</code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4738,7 +5114,7 @@ drastically impact performance and should only be used if no other test is avail
               <tr>
                 <td><code>entries</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>[<a class="autorefs autorefs-internal" title="&lt;span class=&quot;doc doc-object-name doc-class-name&quot;&gt;ConfigEntry&lt;/span&gt;" href="./#anta.input_models.configuration.ConfigEntry">ConfigEntry</a>]</code>
+                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/stdtypes.html#list">list</a>[<a class="autorefs autorefs-internal" title="ConfigEntry (anta.input_models.configuration.ConfigEntry)" href="./#anta.input_models.configuration.ConfigEntry">ConfigEntry</a>]</code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4759,23 +5135,23 @@ drastically impact performance and should only be used if no other test is avail
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/input_models/configuration.py</code></summary>
-  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">108</span>
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
 <span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span>
-<span class="normal">113</span>
-<span class="normal">114</span>
-<span class="normal">115</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ConfigRule</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;A rule targeting a scope in the running-config and the entries to validate within it.&quot;&quot;&quot;</span>
+<span class="normal">110</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ConfigRule</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""A rule targeting a scope in the running-config and the entries to validate within it."""</span>
 
-    <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span><span class="n">extra</span><span class="o">=</span><span class="s2">&quot;forbid&quot;</span><span class="p">)</span>
+    <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span><span class="n">extra</span><span class="o">=</span><span class="s2">"forbid"</span><span class="p">)</span>
     <span class="n">section</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">Annotated</span><span class="p">[</span><span class="n">RegexString</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="n">min_length</span><span class="o">=</span><span class="mi">1</span><span class="p">)]],</span> <span class="n">Field</span><span class="p">(</span><span class="n">min_length</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Optional section path to scope into before validating. Each element matches by exact key, then `re.fullmatch` fallback.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Optional section path to scope into before validating. Each element matches by exact key, then `re.fullmatch` fallback."""</span>
     <span class="n">entries</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ConfigEntry</span><span class="p">]</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Entries to validate within the resolved scope.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Entries to validate within the resolved scope."""</span>
 </code></pre></div></td></tr></table></div>
   </details>
     </div>
@@ -4809,6 +5185,7 @@ drastically impact performance and should only be used if no other test is avail
 
 
 
+
   
 
   <div class="doc doc-children">
@@ -4833,7 +5210,7 @@ drastically impact performance and should only be used if no other test is avail
               <tr>
                 <td><code>value</code></td>
                 <td>
-                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></code>
+                      <code><a class="autorefs autorefs-external" href="https://docs.python.org/3/builtins/functions.html#int">int</a></code>
                 </td>
                 <td>
                   <div class="doc-md-description">
@@ -4868,9 +5245,14 @@ drastically impact performance and should only be used if no other test is avail
 
 
   </div>
-  <details class="quote">
+  <details class="quote mkdocstrings-source">
   <summary>Source code in <code>anta/input_models/configuration.py</code></summary>
-  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">24</span>
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
 <span class="normal">25</span>
 <span class="normal">26</span>
 <span class="normal">27</span>
@@ -4885,31 +5267,26 @@ drastically impact performance and should only be used if no other test is avail
 <span class="normal">36</span>
 <span class="normal">37</span>
 <span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Threshold</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Numeric threshold for a regex-mode rule entry.&quot;&quot;&quot;</span>
+<span class="normal">39</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Threshold</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Numeric threshold for a regex-mode rule entry."""</span>
 
-    <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span><span class="n">extra</span><span class="o">=</span><span class="s2">&quot;forbid&quot;</span><span class="p">)</span>
+    <span class="n">model_config</span> <span class="o">=</span> <span class="n">ConfigDict</span><span class="p">(</span><span class="n">extra</span><span class="o">=</span><span class="s2">"forbid"</span><span class="p">)</span>
     <span class="n">value</span><span class="p">:</span> <span class="nb">int</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;The bound to compare the captured value against.&quot;&quot;&quot;</span>
-    <span class="n">operator</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;le&quot;</span><span class="p">,</span> <span class="s2">&quot;ge&quot;</span><span class="p">,</span> <span class="s2">&quot;eq&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;eq&quot;</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Comparison operator.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""The bound to compare the captured value against."""</span>
+    <span class="n">operator</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">"le"</span><span class="p">,</span> <span class="s2">"ge"</span><span class="p">,</span> <span class="s2">"eq"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"eq"</span>
+<span class="w">    </span><span class="sd">"""Comparison operator."""</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">evaluate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">captured</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return True if `captured` satisfies this threshold constraint.&quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">==</span> <span class="s2">&quot;le&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""Return True if `captured` satisfies this threshold constraint."""</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">==</span> <span class="s2">"le"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">captured</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">==</span> <span class="s2">&quot;ge&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">operator</span> <span class="o">==</span> <span class="s2">"ge"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">captured</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
         <span class="k">return</span> <span class="n">captured</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return a human-readable string representation of the Threshold for reporting.&quot;&quot;&quot;</span>
-        <span class="n">operators</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;le&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;&lt;= </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;ge&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;&gt;= </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;eq&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;== </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+<span class="w">        </span><span class="sd">"""Return a human-readable string representation of the Threshold for reporting."""</span>
+        <span class="n">operators</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"le"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"&lt;= </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"ge"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"&gt;= </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"eq"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"== </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">}</span>
         <span class="k">return</span> <span class="n">operators</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">operator</span><span class="p">]</span>
 </code></pre></div></td></tr></table></div>
   </details>
@@ -5036,7 +5413,7 @@ drastically impact performance and should only be used if no other test is avail
       
     
     <a href="https://github.com/aristanetworks/anta" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
     </a>
   
     
@@ -5047,7 +5424,7 @@ drastically impact performance and should only be used if no other test is avail
       
     
     <a href="https://github.com/aristanetworks/anta/pkgs/container/anta" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
     </a>
   
     
@@ -5058,7 +5435,7 @@ drastically impact performance and should only be used if no other test is avail
       
     
     <a href="https://pypi.org/project/anta/" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
     </a>
   
 </div>
@@ -5068,7 +5445,7 @@ drastically impact performance and should only be used if no other test is avail
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -5076,14 +5453,22 @@ drastically impact performance and should only be used if no other test is avail
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"search":"../../../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["navigation.instant","navigation.path","navigation.top","content.code.copy","toc.follow","navigation.indexes","content.tabs.link"],"redirect":null,"search":"../../../assets/javascripts/workers/search.719e0d91.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"default":["stable"],"provider":"mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ee611ef6.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.3cb411a8.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+      
+        <script src="../../../stylesheets/mermaid-zoom.js"></script>
+      
+        <script src="../../../stylesheets/glightbox-zoom.js"></script>
       
     
   </body>
